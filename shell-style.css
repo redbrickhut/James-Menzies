@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #f7f6ff;
+}
+
+#header + * {
+    margin-top: 90px;
+}
+
+#home-button {
+
+    width: 75px;
+    height: 75px;
+    margin: auto 0;
+    background-image: url("resources/shell icons/home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu-button {
+
+    display: none;
+}
+
+#menu-button + label {
+
+    width: 75px;
+    height: 75px;
+    margin: auto 0;
+    background-image: url("resources/shell icons/menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+p {
+    margin: 0;
+}
