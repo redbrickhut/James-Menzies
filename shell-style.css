@@ -1,44 +1,81 @@
-#overlay {
-    position: relative;
-
+body {
+    margin: 0;
 }
-
 #menu-trigger {
     position: absolute;
     left: 0;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     opacity: 0%;
+    margin: 0;
 
 }
 
 .icon {
     background-repeat: no-repeat;
     background-position: center;
-    ba
+    background-size: cover;
     width: 75px;
     height: 75px;
 }
 
 #menu-icon {
+    background-image: url("resources/shell icons/menu.png");
+}
+
+#home-icon {
     background-image: url("resources/shell icons/home.png");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-#menu-contents {
-    width: 100%;
-    background-color: #8b7a7a;
-    height: 20px;
-    display: none;
-}
-
-#overlay {
+#site-navigation {
+    position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #a450a5;
+    border-bottom: 2px solid #000000;
+}
+
+
+#menu-contents {
+    width: 100%;
+    padding: 0;
+    max-height: 0;
+    background-color: #a57996;
 }
 
 #menu-trigger:checked ~ #menu-contents {
-    display: block;
+
+    border-bottom: 2px solid #000000;
+    -webkit-transition: 0.5s max-height ease;
+    max-height: 400px;
+}
+
+.menu-item {
+    height: 0;
+    opacity: 0;
+    padding-left: 15%;
+    visibility: hidden;
+    position: absolute;
+    border-top: 2px dashed #000000;
+    margin-top: 0px;
+    padding-top: 15px;
+    vertical-align: center;
+
+}
+
+
+#menu-trigger:checked ~ #menu-contents .menu-item {
+
+    height: 20px;
+    position: static;
+    visibility: visible;
+    opacity: 100%;
+    -webkit-transition: opacity 0.5s linear 0.5s;
+
+}
+
+@media all {
+
 }
