@@ -1,26 +1,3 @@
-body {
-    margin: 0;
-}
-
-.icon {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 65px;
-    height: 65px;
-    z-index: 2;
-}
-
-#menu-trigger {
-    position: absolute;
-    left: 0;
-    width: 75px;
-    height: 75px;
-    margin: 0;
-    z-index: 3;
-    filter: opacity(0%);
-}
-
 #menu-icon {
     background-image: url("resources/shell icons/menu.png");
 }
@@ -45,67 +22,73 @@ body {
     background-image: url("resources/shell icons/instagram.png");
 }
 
-#site-navigation {
-    position: fixed;
-    top: 0;
+body {
+    margin: 0;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    z-index: 2;
+}
+
+#menu-trigger {
+    position: absolute;
     left: 0;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    z-index: 3;
+    opacity: 50%;
+}
+
+.horizontal-overlay {
+    height: 80px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background-color: #9e2a7b;
-    border-bottom: 2px solid #000000;
+    z-index: 1;
 }
 
+header.horizontal-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
 
-#menu-contents {
+#menu {
+    position: fixed;
+    display: none;
+    background-color: #a57da3;
     width: 100%;
-    padding: 0;
-    max-height: 0;
-    background-color: #a57996;
-}
-
-#menu-trigger:checked ~ #menu-contents {
-
-    border-bottom: 2px solid #000000;
-    -webkit-transition: 0.5s max-height ease;
-    max-height: 400px;
+    max-height: 0px;
 }
 
 .menu-item {
-    height: 0;
-    opacity: 0;
-    padding-left: 15%;
-    visibility: hidden;
-    position: absolute;
-    border-top: 2px dashed #000000;
-    margin-top: 0px;
-    padding-top: 15px;
-    vertical-align: center;
-    z-index: 1;
-
+    display: none;
 }
 
-#menu-contents .menu-item:first-child {
-    border-top: 2px solid #000000;
+#menu-trigger:checked ~ #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: max-height ease 4s;
+    max-height: 400px;
 }
 
-#menu-trigger:checked ~ #menu-contents .menu-item {
-
-    height: 20px;
-    position: static;
-    visibility: visible;
-    opacity: 100%;
-    -webkit-transition: opacity 0.1s linear 0.3s;
-
+#menu-trigger:checked ~ #menu > .menu-item {
+    display: block;
 }
+
+
 
 #external-links {
     position: fixed;
     bottom: 0;
     display: flex;
     width: 100%;
-    background-color: #9e2a7b;
 }
 
 #link-wrapper {
@@ -125,7 +108,19 @@ body {
 
 @media all and (min-width: 650px){
 
+    #menu {
+        max-width: 0%;
+        height: 100%;
 
+    }
+
+    #menu-trigger:checked ~ #menu {
+        justify-content: flex-start;
+        width: 20%;
+        max-width: 210px;
+        transition: max-width 1s ease;
+        min-height: 100%;
+    }
 
 
 }

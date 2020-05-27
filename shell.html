@@ -10,25 +10,28 @@
 <body>
     <nav id="overlay">
 
-        <header id="site-navigation">
+        <input type="checkbox" id="menu-trigger">
+
+        <header id="site-navigation" class="horizontal-overlay">
             <div id="menu-icon" class="icon"></div>
-            <input type="checkbox" id="menu-trigger">
             <h1>Menzies</h1>
             <a href="#">
                 <div id="home-icon" class="icon"></div>
             </a>
-            <div id="menu-contents" class="menu-dimensions">
-                <p class="menu-item">About Me</p>
-                <p class="menu-item">My Projects</p>
-                <p class="menu-item">Get In Touch</p>
-                <p class="menu-item">Media</p>
-                <p class="menu-item">Blog</p>
-                <p class="menu-item">Site Map</p>
-            </div>
         </header>
 
+        <div id="menu" class="menu-dimensions">
+            <div id="menu-offset" class="horizontal-overlay"></div>
+            <p class="menu-item">About Me</p>
+            <p class="menu-item">My Projects</p>
+            <p class="menu-item">Get In Touch</p>
+            <p class="menu-item">Media</p>
+            <p class="menu-item">Blog</p>
+            <p class="menu-item">Site Map</p>
+        </div>
 
-        <footer id="external-links">
+
+        <footer id="external-links" class="horizontal-overlay">
             <div id="link-wrapper">
                 <a href="#">
                     <div id = "email-icon" class="icon"></div>
@@ -44,8 +47,6 @@
                 </a>
             </div>
         </footer>
-
-
     </nav>
 
     <div id="content-wrapper">
