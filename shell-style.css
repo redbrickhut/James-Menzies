@@ -82,6 +82,7 @@ body {
     margin-top: 0px;
     padding-top: 15px;
     vertical-align: center;
+    z-index: 1;
 
 }
 
@@ -122,6 +123,9 @@ body {
     padding-top: 20px;
 }
 
-@media all {
+@media all and (min-width: 650px){
+
+
+
 
 }
