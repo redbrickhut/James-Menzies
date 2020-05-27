@@ -36,13 +36,12 @@ body {
 }
 
 #menu-trigger {
-    position: absolute;
-    left: 0;
+    position: fixed;
     width: 75px;
     height: 75px;
     margin: 0;
     z-index: 3;
-    opacity: 50%;
+    opacity: 0%;
 }
 
 .horizontal-overlay {
@@ -56,6 +55,7 @@ header.horizontal-overlay {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #menu {
@@ -171,6 +171,10 @@ header.horizontal-overlay {
         background-color: #9e2a7b;
     }
 
+    50% {
+        background-color: #9e2a7b;
+    }
+
     100% {
         width: 25%;
         background-color: #a57da3;
@@ -180,6 +184,10 @@ header.horizontal-overlay {
 @keyframes stretch {
     0% {
         max-height: 0;
+        background-color: #9e2a7b;
+    }
+
+    50% {
         background-color: #9e2a7b;
     }
 
