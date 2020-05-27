@@ -2,21 +2,23 @@ body {
     margin: 0;
 }
 
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    z-index: 2;
+}
+
 #menu-trigger {
     position: absolute;
     left: 0;
     width: 75px;
     height: 75px;
-    opacity: 0%;
     margin: 0;
-}
-
-.icon {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 75px;
-    height: 75px;
+    z-index: 3;
+    filter: opacity(0%);
 }
 
 #menu-icon {
@@ -27,6 +29,22 @@ body {
     background-image: url("resources/shell icons/home.png");
 }
 
+#github-icon {
+    background-image: url("resources/shell icons/github.png");
+}
+
+#email-icon {
+    background-image: url("resources/shell icons/email.png");
+}
+
+#linkedin-icon {
+    background-image: url("resources/shell icons/linkedin.png");
+}
+
+#instagram-icon {
+    background-image: url("resources/shell icons/instagram.png");
+}
+
 #site-navigation {
     position: fixed;
     top: 0;
@@ -35,7 +53,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #9e2a7b;
     border-bottom: 2px solid #000000;
 }
 
@@ -81,12 +99,27 @@ body {
 
 }
 
+#external-links {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    background-color: #9e2a7b;
+}
+
+#link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+}
+
 #top-offset {
     padding-bottom: 20px;
 }
 
 #bottom-offset {
-    padding-top: 20px%;
+    padding-top: 20px;
 }
 
 @media all {
