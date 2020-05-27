@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+
 #menu-trigger {
     position: absolute;
     left: 0;
@@ -8,7 +9,6 @@ body {
     height: 75px;
     opacity: 0%;
     margin: 0;
-
 }
 
 .icon {
@@ -28,12 +28,14 @@ body {
 }
 
 #site-navigation {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #a450a5;
+    background-color: #ffffff;
     border-bottom: 2px solid #000000;
 }
 
@@ -65,6 +67,9 @@ body {
 
 }
 
+#menu-contents .menu-item:first-child {
+    border-top: 2px solid #000000;
+}
 
 #menu-trigger:checked ~ #menu-contents .menu-item {
 
@@ -72,8 +77,16 @@ body {
     position: static;
     visibility: visible;
     opacity: 100%;
-    -webkit-transition: opacity 0.5s linear 0.5s;
+    -webkit-transition: opacity 0.1s linear 0.3s;
 
+}
+
+#top-offset {
+    padding-bottom: 20px;
+}
+
+#bottom-offset {
+    padding-top: 20px%;
 }
 
 @media all {
