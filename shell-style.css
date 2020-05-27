@@ -63,7 +63,6 @@ header.horizontal-overlay {
     display: none;
     background-color: #a57da3;
     width: 100%;
-    max-height: 0px;
 }
 
 .menu-item {
@@ -74,12 +73,14 @@ header.horizontal-overlay {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    transition: max-height ease 4s;
-    max-height: 400px;
+    height: auto;
+    animation: stretch 0.5s;
+
 }
 
 #menu-trigger:checked ~ #menu > .menu-item {
     display: block;
+    animation: delayed-appearance 1s;
 }
 
 
@@ -109,18 +110,96 @@ header.horizontal-overlay {
 @media all and (min-width: 650px){
 
     #menu {
-        max-width: 0%;
-        height: 100%;
-
+        width: 0%;
     }
 
     #menu-trigger:checked ~ #menu {
         justify-content: flex-start;
-        width: 20%;
-        max-width: 210px;
-        transition: max-width 1s ease;
-        min-height: 100%;
+        animation: widen 0.5s;
+        width: 25%;
+        height: 100%;
+    }
+
+    #menu-trigger:checked ~ #menu > .menu-item {
+        animation: delayed-appearance 1s;
+    }
+}
+
+@media all and (min-width: 950px) {
+
+
+    #menu-icon {
+        visibility: hidden;
+    }
+
+    #menu-trigger {
+        display: none;
+    }
+
+    #menu {
+        height: 100%;
+        width: 210px;
+        display: block;
+    }
+
+    .menu-item {
+        display: block;
     }
 
 
+    #horizontal-alignment {
+        display: flex;
+        position: relative;
+    }
+
+    #left-offset {
+        flex-basis: 210px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    #page-content {
+        padding-top: 70px;
+        padding-left: 150px;
+        padding-right: 20%;
+    }
+}
+
+@keyframes widen {
+    0% {
+        width: 0%;
+        background-color: #9e2a7b;
+    }
+
+    100% {
+        width: 25%;
+        background-color: #a57da3;
+    }
+}
+
+@keyframes stretch {
+    0% {
+        max-height: 0;
+        background-color: #9e2a7b;
+    }
+
+    100% {
+        max-height: 500px;
+        background-color: #a57da3;
+    }
+}
+
+@keyframes delayed-appearance {
+
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
