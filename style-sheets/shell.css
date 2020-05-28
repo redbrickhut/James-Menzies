@@ -2,10 +2,6 @@
     background-image: url("../resources/shell icons/menu.png");
 }
 
-#home-icon {
-    background-image: url("../resources/shell icons/home.png");
-}
-
 #github-icon {
     background-image: url("../resources/shell icons/github.png");
 }
@@ -26,7 +22,7 @@ body {
     margin: 0;
 }
 
-.icon {
+.icon.picture {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -67,6 +63,13 @@ header.horizontal-overlay {
 
 .menu-item {
     display: none;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #9e2a7b;
+    text-decoration: none;
+    color: #000000;
 }
 
 #menu-trigger:checked ~ #menu {
@@ -108,11 +111,6 @@ header.horizontal-overlay {
 
 @media all and (min-width: 600px){
 
-    #link-wrapper {
-        margin-left: 50%;
-        margin-right: 15%;
-    }
-
     #menu {
         width: 0%;
     }
@@ -149,7 +147,6 @@ header.horizontal-overlay {
     .menu-item {
         display: block;
     }
-
 
     #horizontal-alignment {
         display: flex;

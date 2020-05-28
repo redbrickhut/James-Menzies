@@ -1,23 +1,8 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-}
-
-.picture {
-    width: 100%;
-    margin: 10px auto;
-}
-
 #mobile-only-banner {
 
     background-image: url("../resources/mobile-banner.jpg");
     padding-top: 33%;
 }
-
-
 
 #job-summary {
     width: 75%;
@@ -28,17 +13,19 @@ html, body {
 #job-summary > * {
     margin-top: 10px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .horizontal-divider {
-    background-image: url("../resources/horizontal_line.png");
-    padding-top: 2%;
-    width: 70%;
-}
+    background-color: #000000;
+    height: 4px;
+    width: 150px;
+    margin: auto;
+    }
 
 #welcome-picture ,.directory-picture {
-    width: 95%;
-    padding-top: 95%;
+    width: 100%;
+    padding-top: 100%;
 }
 
 #welcome-picture {
@@ -53,7 +40,7 @@ html, body {
 }
 
 .directory-wrapper {
-    border: 2px black solid;
+    border: 1px #000000 solid;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -80,6 +67,14 @@ html, body {
 
 @media all and (min-width: 600px){
 
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
     #page-wrapper {
         display: flex;
         flex-direction: column;
@@ -101,12 +96,21 @@ html, body {
         margin: 0px;
     }
 
+    .job-title {
+        font-size: 28px;
+    }
+
+    .horizontal-divider {
+        height: 6px;
+        width: 350px;
+    }
+
     #welcome {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
         max-width: 635px;
-        margin-top: 250px;
+        margin-top: 185px;
     }
 
     #welcome-picture {
@@ -119,6 +123,7 @@ html, body {
     #greeting {
         width: 50%;
         text-align: right;
+        margin-right: 15px;
 
     }
 
@@ -126,11 +131,12 @@ html, body {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        max-width: 1785px;
+        max-width: 1650px;
     }
 
     .directory-wrapper {
         width: 28%;
+        align-items: center;
     }
 }
 
