@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.picture {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p  {
+    font-family: 'Mukta', sans-serif;
+}
+
+h1, h2, h3, span {
+    font-family: 'Patua One', cursive;
+}

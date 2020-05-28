@@ -1,25 +1,25 @@
 #menu-icon {
-    background-image: url("resources/shell icons/menu.png");
+    background-image: url("../resources/shell icons/menu.png");
 }
 
 #home-icon {
-    background-image: url("resources/shell icons/home.png");
+    background-image: url("../resources/shell icons/home.png");
 }
 
 #github-icon {
-    background-image: url("resources/shell icons/github.png");
+    background-image: url("../resources/shell icons/github.png");
 }
 
 #email-icon {
-    background-image: url("resources/shell icons/email.png");
+    background-image: url("../resources/shell icons/email.png");
 }
 
 #linkedin-icon {
-    background-image: url("resources/shell icons/linkedin.png");
+    background-image: url("../resources/shell icons/linkedin.png");
 }
 
 #instagram-icon {
-    background-image: url("resources/shell icons/instagram.png");
+    background-image: url("../resources/shell icons/instagram.png");
 }
 
 body {
@@ -164,8 +164,8 @@ header.horizontal-overlay {
 
     #page-content {
         padding-top: 70px;
-        padding-left: 150px;
-        padding-right: 20%;
+        padding-left: 70px;
+        padding-right: 5%;
     }
 }
 

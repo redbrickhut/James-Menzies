@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.picture {
+    width: 100%;
+    margin: 10px auto;
+}
+
+#mobile-only-banner {
+
+    background-image: url("../resources/mobile-banner.jpg");
+    padding-top: 33%;
+}
+
+
+
+#job-summary {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+#job-summary > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.horizontal-divider {
+    background-image: url("../resources/horizontal_line.png");
+    padding-top: 2%;
+    width: 70%;
+}
+
+#welcome-picture ,.directory-picture {
+    width: 95%;
+    padding-top: 95%;
+}
+
+#welcome-picture {
+    background-image: url("../resources/james.jpg");
+}
+
+#pages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.directory-wrapper {
+    border: 2px black solid;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.directory-wrapper:hover {
+    background-color: yellow;
+}
+
+.page-name {
+    text-align: center;
+}
+
+#coder-picture {
+    background-color: red;
+}
+
+#musician-picture {
+    background-color: yellow;
+}
+
+#person-picture {
+    background-color: cyan;
+}
+
+@media all and (min-width: 600px){
+
+    #page-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 98%;
+        width: 98%;
+        position: absolute;
+        left: 1%;
+        top: 1%;
+    }
+
+
+    #mobile-only-banner {
+        display: none;
+    }
+
+    #job-summary {
+        margin: 0px;
+    }
+
+    #welcome {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        max-width: 635px;
+        margin-top: 250px;
+    }
+
+    #welcome-picture {
+        width: 250px;
+        height: 250px;
+        padding: 0;
+
+    }
+
+    #greeting {
+        width: 50%;
+        text-align: right;
+
+    }
+
+    #pages {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1785px;
+    }
+
+    .directory-wrapper {
+        width: 28%;
+    }
+}
+
