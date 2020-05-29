@@ -1,12 +1,12 @@
 body {
 
-    max-width: 650px;
+    max-width: 850px;
     outline: 2px solid black;
     margin: 40px auto;
     padding: 20px;
 }
 
-#my-projects-photo {
+#introduction-photo {
     display: none;
 }
 
@@ -20,7 +20,74 @@ body {
     display: block;
 }
 
-body .project-wrapper:nth-of-type(even) {
+body .project-wrapper:nth-of-type(odd) {
     text-align: right;
+
+}
+
+@media all and (min-width: 600px){
+
+    #introduction {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 50px;
+    }
+
+    #introduction-summary {
+        flex-basis: 65%;
+        padding-left: 15px;
+    }
+
+    #introduction-photo {
+        flex-basis: 35%;
+        background-color: #000000;
+        display: inline-block;
+        padding-top: 20%;
+    }
+
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 15px;
+        row-gap: 20px;
+        margin-bottom: 70px;
+        font-size-adjust: none;
+    }
+
+    .project-title {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .project-image-container {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .project-image {
+        display: block;
+        margin-bottom: 10%;
+    }
+
+    .project-summary {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .project-wrapper:nth-child(odd) .project-image-container {
+        grid-column: 2;
+    }
+
+    .project-wrapper:nth-child(odd) .project-summary {
+        grid-column: 1;
+    }
+
+
+
+
 
 }
