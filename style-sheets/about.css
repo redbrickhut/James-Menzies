@@ -1,7 +1,37 @@
 body {
-
     max-width: 850px;
     outline: 2px solid black;
     margin: 40px auto;
     padding: 20px;
+}
+
+#link-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.vertical-separator {
+    height: auto;
+    width: 10px;
+    background-color: #000000;
+    padding: 0;
+    margin-right: 20px;
+}
+
+
+
+
+@media all and (min-width: 600px) {
+
+
+
+    #bullet-points {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #bullet-points li {
+        flex-basis: 47%;
+    }
 }

@@ -16,3 +16,7 @@ p, li, span {
 h1, h2, h3, a {
     font-family: 'Patua One', cursive;
 }
+
+li {
+    list-style-type: square;
+}
