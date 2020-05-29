@@ -11,7 +11,7 @@ body {
 }
 
 .project-image {
-    background-color: black;
+    background-color: #6f6f6f;
     display: none;
     padding-top: 50%;
 }
@@ -31,6 +31,7 @@ body .project-wrapper:nth-of-type(odd) {
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 50px;
+        align-items: stretch;
     }
 
     #introduction-summary {
@@ -40,9 +41,10 @@ body .project-wrapper:nth-of-type(odd) {
 
     #introduction-photo {
         flex-basis: 35%;
-        background-color: #000000;
+        background-color: #6f6f6f;
         display: inline-block;
-        padding-top: 20%;
+        padding: 0;
+
     }
 
     .project-wrapper {

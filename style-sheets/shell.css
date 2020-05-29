@@ -26,9 +26,9 @@ body {
 }
 
 .icon.picture {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    padding: 0;
+    margin: 0;
     width: 65px;
     height: 65px;
     z-index: 2;
