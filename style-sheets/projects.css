@@ -3,4 +3,24 @@ body {
     max-width: 650px;
     outline: 2px solid black;
     margin: 40px auto;
+    padding: 20px;
+}
+
+#my-projects-photo {
+    display: none;
+}
+
+.project-image {
+    background-color: black;
+    display: none;
+    padding-top: 50%;
+}
+
+.project-image:first-child {
+    display: block;
+}
+
+body .project-wrapper:nth-of-type(even) {
+    text-align: right;
+
 }
