@@ -5,6 +5,15 @@ body {
     padding: 20px;
 }
 
+
+#profile-picture.picture {
+
+    background-image: url("../resources/james.jpg");
+    padding-top: 80%;
+    width: 70%;
+    margin: auto;
+}
+
 #link-wrapper {
     display: flex;
     position: relative;
@@ -20,11 +29,31 @@ body {
 }
 
 
-
-
 @media all and (min-width: 600px) {
 
 
+    #introduction {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
+        row-gap: 30px;
+    }
+
+    #introduction-summary {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #profile-picture.picture {
+        width: 100%;
+        padding-top: 130%;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #key-details {
+        grid-column: 2;
+    }
 
     #bullet-points {
         display: flex;

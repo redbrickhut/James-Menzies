@@ -11,7 +11,7 @@ body {
 }
 
 .project-image {
-    background-color: #6f6f6f;
+    background-image: url("../resources/app_screenshot.jpeg");
     display: none;
     padding-top: 50%;
 }
@@ -41,7 +41,7 @@ body .project-wrapper:nth-of-type(odd) {
 
     #introduction-photo {
         flex-basis: 35%;
-        background-color: #6f6f6f;
+        background-image: url("../resources/leet.jpeg");
         display: inline-block;
         padding: 0;
 
