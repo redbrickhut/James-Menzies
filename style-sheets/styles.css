@@ -9,10 +9,10 @@
     padding-top: 100%;
 }
 
-p  {
+p, li, span {
     font-family: 'Mukta', sans-serif;
 }
 
-h1, h2, h3, span, a {
+h1, h2, h3, a {
     font-family: 'Patua One', cursive;
 }
