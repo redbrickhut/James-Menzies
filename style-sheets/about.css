@@ -1,10 +1,3 @@
-body {
-    max-width: 850px;
-    outline: 2px solid black;
-    margin: 40px auto;
-    padding: 20px;
-}
-
 
 #profile-picture.picture {
 
@@ -14,7 +7,7 @@ body {
     margin: auto;
 }
 
-#link-wrapper {
+#resume-link-wrapper {
     display: flex;
     position: relative;
     justify-content: center;
