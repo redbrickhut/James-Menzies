@@ -111,7 +111,7 @@ header.horizontal-overlay h2 {
     width: 100%;
 }
 
-#resume-link-wrapper {
+#link-wrapper {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -184,7 +184,7 @@ header.horizontal-overlay h2 {
         animation: none;
     }
 
-    #resume-link-wrapper {
+    #link-wrapper {
         margin-left: 30px;
     }
 }
