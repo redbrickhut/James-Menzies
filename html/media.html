@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Title</title>
     <link rel="stylesheet" href="../style-sheets/styles.css"/>
     <link rel="stylesheet" href="../style-sheets/shell.css"/>
@@ -9,8 +11,46 @@
 </head>
 <body>
 
-<div class="page-wrapper">
+<nav id="overlay">
 
+    <input type="checkbox" id="menu-trigger">
+
+    <header id="site-navigation" class="horizontal-overlay">
+        <div id="menu-icon" class="icon picture"></div>
+        <h2>home</h2>
+    </header>
+
+    <div id="menu" class="menu-dimensions">
+        <div id="menu-offset" class="horizontal-overlay"></div>
+        <a href="./index.html" class="menu-item">Home</a>
+        <a href="about.html" class="menu-item">About Me</a>
+        <a href="projects.html" class="menu-item">My Projects</a>
+        <a href="#" class="menu-item">Media</a>
+        <a href="blog.html" class="menu-item">Blog</a>
+    </div>
+
+
+    <footer id="external-links" class="horizontal-overlay">
+        <div id="link-wrapper">
+            <a href="#">
+                <div id = "email-icon" class="icon picture"></div>
+            </a>
+            <a href="https://github.com/redbrickhut">
+                <div id = "github-icon" class="icon picture"></div>
+            </a>
+            <a href="https://www.instagram.com/redbrickhut/">
+                <div id = "instagram-icon" class="icon picture"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/james-menzies-24ab3a184/">
+                <div id = "linkedin-icon" class="icon picture"></div>
+            </a>
+        </div>
+    </footer>
+</nav>
+
+
+
+<div class="page-wrapper">
     <h1 class="post-title">Media</h1>
     <section id="introduction">
         <div id="introduction-summary">
@@ -28,12 +68,14 @@
     <section id="videos">
         <h2>VIDEOS</h2>
         <div class="video-container">
-            <iframe src="https://youtu.be/0HZVnaxBA_w"></iframe>
+            <iframe src="https://www.youtube.com/embed/04UV5TCvECY"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="video-summary">
+
+            </p>
         </div>
+
     </section>
-
-
-
 </div>
 
 </body>
