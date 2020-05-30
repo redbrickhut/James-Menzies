@@ -48,6 +48,10 @@ body {
     z-index: 1;
 }
 
+#menu-icon {
+    transition: transform 1s,
+}
+
 header.horizontal-overlay {
     position: fixed;
     top: 0;
@@ -82,7 +86,6 @@ header.horizontal-overlay h2 {
 }
 
 .menu-item:hover {
-    width: 110%;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #d3d4d6;
@@ -104,6 +107,19 @@ header.horizontal-overlay h2 {
 #menu-trigger:checked ~ #menu > .menu-item {
     display: block;
     animation: delayed-appearance 1s;
+}
+
+.menu-item:hover {
+
+    border: solid 1px #2c3632;
+    transition: width 1s ease;
+
+
+}
+
+.menu-item:hover + .menu-item {
+
+    border-top: solid 1px #2c3632;
 }
 
 #external-links {
@@ -146,6 +162,12 @@ header.horizontal-overlay h2 {
 
     #menu-trigger:checked ~ #menu > .menu-item {
         animation: delayed-appearance 1s;
+    }
+
+    .menu-item:hover {
+
+
+        width: 110%;
     }
 }
 

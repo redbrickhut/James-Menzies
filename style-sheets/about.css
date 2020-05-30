@@ -1,10 +1,11 @@
 
 #profile-picture.picture {
 
-    background-image: url("../resources/james.jpg");
+    background-image: url("../resources/about.jpg");
     padding-top: 80%;
-    width: 70%;
+    width: 60%;
     margin: auto;
+    background-position: top;
 }
 
 #resume-link-wrapper {
@@ -25,10 +26,15 @@
 @media all and (min-width: 600px) {
 
 
+    ul {
+        padding-left: 15px;
+    }
+
+
     #introduction {
         display: grid;
-        grid-template-columns: 48% 48%;
-        column-gap: 4%;
+        grid-template-columns: 40% 58%;
+        column-gap: 2%;
         row-gap: 30px;
     }
 
@@ -37,16 +43,17 @@
         grid-row: 1;
     }
 
+    #introduction-summary li {
+        font-size: 20px;
+    }
+
     #profile-picture.picture {
         width: 100%;
         padding-top: 130%;
         grid-column: 1;
-        grid-row: 1 / span 2;
+        grid-row: 1;
     }
 
-    #key-details {
-        grid-column: 2;
-    }
 
     #bullet-points {
         display: flex;
@@ -55,5 +62,9 @@
 
     #bullet-points li {
         flex-basis: 47%;
+    }
+
+    #resume-link-wrapper {
+        font-size: 24px;
     }
 }

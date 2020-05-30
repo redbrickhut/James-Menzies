@@ -35,7 +35,7 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     background-color: rgba(256,256, 256, 0.5);
-    max-width: 850px;
+    max-width: 950px;
 
 }
 
@@ -43,7 +43,7 @@ li {
 
 
     .page-wrapper {
-        margin: 200px auto auto 120px;
+        margin: 150px auto auto 120px;
     }
 
 }
