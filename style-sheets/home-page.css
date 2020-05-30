@@ -6,15 +6,15 @@
 
 #job-summary {
     width: 75%;
-    margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    margin: 20px auto;
 }
 
-#job-summary > * {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-}
+
 
 .horizontal-divider {
     background-color: #000000;
@@ -24,9 +24,14 @@
     padding: 0;
     }
 
-#welcome-picture ,.directory-picture {
+#welcome-picture  {
     width: 100%;
     padding-top: 100%;
+}
+
+.directory-picture {
+    width: 100%;
+    padding-top: 70%;
 }
 
 #welcome-picture {
@@ -81,11 +86,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 98%;
-        width: 98%;
-        position: absolute;
-        left: 1%;
-        top: 1%;
+        height: 100%;
     }
 
 
@@ -94,7 +95,11 @@
     }
 
     #job-summary {
-        margin: 0px;
+
+        min-height: 100px;
+        flex-grow: 1;
+        max-height: 110px;
+
     }
 
     .job-title {
@@ -106,12 +111,18 @@
         width: 350px;
     }
 
+    #page-separator {
+        flex-grow: 5;
+        max-height: 150px;
+    }
+
     #welcome {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
+        flex-shrink: 0;
+        flex-grow: 0;
         max-width: 635px;
-        margin-top: 185px;
     }
 
     #welcome-picture {
@@ -123,18 +134,17 @@
     }
 
     #greeting {
-        flex-basis: 60%;
-        flex-shrink: 1;
         text-align: right;
         margin: 0 15px 0 0;
 
     }
 
     #pages {
+        flex-shrink: 1;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        max-width: 1430px;
+        max-width: 900px;
     }
 
     .directory-wrapper {
