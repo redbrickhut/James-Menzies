@@ -117,11 +117,9 @@ header.horizontal-overlay {
 }
 
 #background-layer {
-    position: absolute;
     width: 100%;
-    margin: 80px 0;
+    padding: 80px 0;
     min-height: calc(100vh - 160px);
-    height: auto;
     z-index: -2;
     background-color: darkgray;
 }
