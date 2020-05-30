@@ -1,10 +1,3 @@
-body {
-
-    max-width: 850px;
-    outline: 2px solid black;
-    margin: 40px auto;
-    padding: 20px;
-}
 
 #introduction-photo {
     display: none;
@@ -49,8 +42,8 @@ body .project-wrapper:nth-of-type(odd) {
 
     .project-wrapper {
         display: grid;
-        grid-template-columns: 50% 50%;
-        column-gap: 15px;
+        grid-template-columns: 48% 48%;
+        column-gap: 4%;
         row-gap: 20px;
         margin-bottom: 70px;
         font-size-adjust: none;

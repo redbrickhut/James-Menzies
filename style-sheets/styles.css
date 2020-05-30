@@ -17,6 +17,11 @@ h1, h2, h3, a {
     font-family: 'Patua One', cursive;
 }
 
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -30,6 +35,15 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     background-color: rgba(256,256, 256, 0.5);
-    max-width: 1100px;
-    margin: auto;
+    max-width: 850px;
+
+}
+
+@media all and (min-width: 950px){
+
+
+    .page-wrapper {
+        margin: 200px auto auto 120px;
+    }
+
 }

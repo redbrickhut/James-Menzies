@@ -149,5 +149,13 @@
         flex-basis: 28%;
         align-items: center;
     }
+
 }
 
+@media all and (min-width: 950px) {
+
+    .page-wrapper {
+        margin: auto;
+    }
+
+}
