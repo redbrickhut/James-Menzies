@@ -156,6 +156,7 @@
 
     .page-wrapper {
         margin: auto;
+        max-width: 1100px;
     }
 
 }
