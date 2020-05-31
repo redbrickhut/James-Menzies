@@ -24,11 +24,7 @@
 
 }
 
-.post-link:hover {
-    background-color: #bdbdbd;
-    text-decoration: none;
-    color: #000000;
-}
+
 
 .post-details {
     display: flex;

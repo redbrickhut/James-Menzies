@@ -55,13 +55,7 @@
     padding: 10px;
 }
 
-.directory-wrapper:hover {
-    opacity: 50%;
-}
 
-.directory-wrapper:active {
-    opacity: 30%;
-}
 
 .page-name {
     text-align: center;

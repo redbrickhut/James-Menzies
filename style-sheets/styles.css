@@ -20,11 +20,24 @@ h1, h2, h3, a {
 h1 {
     text-align: center;
     font-size: 50px;
+    padding-top: 40px;
 }
 
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+.text-based-link {
+
+}
+
+.block-based-link:hover {
+    opacity: 50%;
+}
+
+.block-based-link:active {
+    opacity: 30%;
 }
 
 li {

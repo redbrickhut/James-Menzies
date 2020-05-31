@@ -13,10 +13,6 @@
     display: block;
 }
 
-body .project-wrapper:nth-of-type(odd) {
-    text-align: right;
-
-}
 
 @media all and (min-width: 600px){
 
