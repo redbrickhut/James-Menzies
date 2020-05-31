@@ -1,17 +1,7 @@
 
-#introduction {
-    display: flex;
-    margin-bottom: 70px;
-}
-
-#introduction-summary {
-    flex-basis: 65%;
-}
 
 #introduction-photo {
-    flex-basis: 35%;
-    padding-top: 18%;
-    background-color: #bfbfbf;
+    display: none;
 }
 
 .arrow-button {
@@ -57,6 +47,27 @@
 }
 
 @media all and (min-width: 600px) {
+
+    #introduction {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 70px;
+    }
+
+    #introduction-summary {
+        flex-basis: 45%;
+        margin-right: 30px;
+    }
+
+
+    #introduction-photo {
+        display: block;
+        flex-basis: 50%;
+        padding-top: 30%;
+        background-color: #899593;
+        max-width: 375px;
+    }
+
     .post-summary {
         flex-basis: 45%;
         display: block;
