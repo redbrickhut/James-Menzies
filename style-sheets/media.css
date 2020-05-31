@@ -18,7 +18,7 @@ section {
 
 
 iframe {
-    width: 100%;
+    width:  560px;
     height: 315px;
 }
 
@@ -28,6 +28,14 @@ iframe {
         flex-basis: 32.5%;
         padding-top: 32.5%;
         margin-bottom: 1.25%;
+    }
+
+    .video-container {
+        width: 560px;
+    }
+
+    .video-container:nth-child(odd) {
+        margin-left: auto;
     }
 }
 
