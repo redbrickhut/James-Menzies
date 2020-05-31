@@ -1,0 +1,15 @@
+#back-button {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#back-icon {
+    background-image: url("../resources/back-button.png");
+    z-index: 0;
+}
+
+
+#back-button span {
+    margin-left: 20px;
+}

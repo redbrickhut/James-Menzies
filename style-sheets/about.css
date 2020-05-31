@@ -14,14 +14,6 @@
     justify-content: center;
 }
 
-.vertical-separator {
-    height: auto;
-    width: 10px;
-    background-color: #000000;
-    padding: 0;
-    margin-right: 20px;
-}
-
 
 @media all and (min-width: 600px) {
 
