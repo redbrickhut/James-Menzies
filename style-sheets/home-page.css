@@ -1,3 +1,8 @@
+.page-wrapper {
+    max-width: 350px;
+    margin: auto;
+}
+
 
 #mobile-only-banner {
 
@@ -14,8 +19,6 @@
     min-height: 70px;
     margin: 20px auto;
 }
-
-
 
 .horizontal-divider {
     background-color: #000000;
@@ -53,7 +56,11 @@
 }
 
 .directory-wrapper:hover {
-    background-color: yellow;
+    opacity: 50%;
+}
+
+.directory-wrapper:active {
+    opacity: 30%;
 }
 
 .page-name {
@@ -85,6 +92,8 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        max-width: inherit;
+        margin: inherit;
     }
 
 
