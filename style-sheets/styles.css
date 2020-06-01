@@ -28,7 +28,16 @@ a {
 }
 
 .text-based-link {
+    font-size: 24px;
+    text-decoration: underline;
+}
 
+.text-based-link:hover {
+    color: var(--solid-primary-color);
+}
+
+.text-based-link:active {
+    color: var(--solid-alternate-color);
 }
 
 .block-based-link:hover {

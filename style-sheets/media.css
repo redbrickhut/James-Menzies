@@ -63,3 +63,8 @@ iframe {
     }
 }
 
+/*photo gallery dump*/
+
+#photo-1 {
+    background-image: url("../resources/home-page/james.jpg");
+}

@@ -12,6 +12,10 @@
     display: block;
 }
 
+.text-based-link {
+    font-size: 18px;
+}
+
 @media all and (min-width: 600px){
 
     #introduction {
