@@ -79,7 +79,7 @@ header.horizontal-overlay h2 {
     background-color: var(--solid-secondary-color);
     border-bottom: solid 1px var(--separator-color);
     text-decoration: none;
-    color: var(--background-color);
+    color: var(--text-color);
 
 }
 

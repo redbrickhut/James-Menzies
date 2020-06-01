@@ -8,7 +8,7 @@
     --solid-primary-color: #084c61;
     --solid-alternate-color: #db3a34;
     --text-color: #323031;
-    --background-color: rgba(255, 255, 255, 0.97);
+    --background-color: rgba(255, 255, 255, 0.93);
     --separator-color: #000000;
     color: var(--text-color)
 }
@@ -84,7 +84,7 @@ li {
     top: 80px;
     min-height: calc(100vh - 160px);
     z-index: -2;
-    background-image: url("../resources/site-background.png");
+    background-image: url("../resources/site-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
