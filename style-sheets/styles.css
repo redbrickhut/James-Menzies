@@ -19,7 +19,7 @@ h1, h2, h3, a {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 0;
@@ -68,6 +68,12 @@ li {
 
     .page-wrapper {
         margin: 150px auto auto 120px;
+    }
+
+    h1 {
+        font-size: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
 }
