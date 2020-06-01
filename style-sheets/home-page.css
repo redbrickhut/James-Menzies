@@ -37,7 +37,7 @@
 }
 
 #welcome-picture {
-    background-image: url("../resources/james.jpg");
+    background-image: url("../resources/home-page/james.jpg");
 }
 
 #pages {
@@ -66,7 +66,7 @@
 }
 
 #person-picture {
-    background-image: url("../resources/person.jpg");
+    background-image: url("../resources/home-page/person.jpg");
 }
 
 @media all and (min-width: 600px){

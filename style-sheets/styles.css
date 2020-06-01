@@ -46,7 +46,7 @@ a {
     width: 100%;
     padding-top: 100%;
     outline: 1px solid var(--separator-color);
-    background-image: url("../resources/placeholder.png");
+    background-image: url("../resources/other icons/placeholder.png");
 }
 
 li {
@@ -75,7 +75,7 @@ li {
     top: 80px;
     min-height: calc(100vh - 160px);
     z-index: -2;
-    background-image: url("../resources/rainbow.png");
+    background-image: url("../resources/site-background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -20,8 +20,7 @@
     align-items: flex-end;
 }
 
-#author-picture {
-    background-image: url("../resources/james.jpg");
+.author-picture {
     flex-basis: 30%;
     padding-top: 30%;
     margin-left: 20px;
@@ -81,10 +80,12 @@
         font-size: 24px;
     }
 
-    #author-picture {
+    .author-picture {
         padding: 0;
         flex-basis: 150px;
         height: 150px;
+        margin-right: 20px;
+
     }
 
     #snippet {
@@ -95,10 +96,6 @@
     #introduction-details {
         flex-basis: auto;
         flex-shrink: 0;
-    }
-
-    #author-picture {
-        margin-right: 20px;
     }
 
     .article-segment {
@@ -118,4 +115,12 @@
         flex-basis: 35%;
     }
 }
+
+/*author picture dump*/
+
+#james-menzies {
+    background-image: url("../resources/home-page/james.jpg");
+}
+
+/*article picture dump*/
 
