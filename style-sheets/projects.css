@@ -4,7 +4,6 @@
 }
 
 .project-image {
-    background-image: url("../resources/app_screenshot.jpeg");
     display: none;
     padding-top: 50%;
 }
@@ -30,7 +29,6 @@
 
     #introduction-photo {
         flex-basis: 35%;
-        background-image: url("../resources/leet.jpeg");
         display: inline-block;
         padding: 0;
 
