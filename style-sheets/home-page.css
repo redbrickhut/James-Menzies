@@ -1,11 +1,11 @@
-.page-wrapper {
+.page-contents {
     max-width: 350px;
     margin: auto;
 }
 
 
 #mobile-only-banner {
-
+    margin-top: 20px;
     background-image: url("../resources/mobile-banner.jpg");
     padding-top: 33%;
 }
@@ -73,12 +73,9 @@
 
 @media all and (min-width: 600px){
 
-    #background-layer {
-        height: calc(100vh - 160px);
 
-    }
 
-    .page-wrapper {
+    .page-contents {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -155,9 +152,11 @@
 
 @media all and (min-width: 950px) {
 
-    .page-wrapper {
-        margin: auto;
+    .page-contents {
+        margin: 80px auto 0 auto;
         max-width: 1100px;
+        height: calc(100vh - 160px);
+        z-index: -1;
     }
 
 }

@@ -57,7 +57,7 @@ li {
     list-style-type: square;
 }
 
-.page-wrapper {
+.page-contents {
     padding: 80px 20px;
     background-color: rgba(256,256, 256, 0.95);
     max-width: 950px;
@@ -68,7 +68,7 @@ li {
 @media all and (min-width: 950px){
 
 
-    .page-wrapper {
+    .page-contents {
         margin: 230px auto auto 330px;
         padding: 0 20px 0px 20px;
     }
