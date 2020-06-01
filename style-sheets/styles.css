@@ -1,23 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
-.picture {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 100%;
-    outline: 1px solid #000000;
-    background-image: url("../resources/placeholder.png");
+:root {
+    font-family: 'Mukta', sans-serif;
+    --solid-secondary-color: #177e89;
+    --solid-primary-color: #084c61;
+    --solid-alternate-color: #db3a34;
+    --text-color: #323031;
+    --background-color: rgba(255, 255, 255, 0.97);
+    --separator-color: #000000;
+    color: var(--text-color)
+
 }
 
-p, li, span, pre {
-    font-family: 'Mukta', sans-serif;
-}
-
-h1, h2, h3, a {
-    font-family: 'Mukta', sans-serif;
-}
 
 h1 {
     text-align: center;
@@ -33,14 +28,6 @@ a {
     text-decoration: inherit;
 }
 
-.vertical-separator {
-    height: auto;
-    width: 10px;
-    background-color: #000000;
-    padding: 0;
-    margin-right: 20px;
-}
-
 .text-based-link {
 
 }
@@ -53,17 +40,47 @@ a {
     opacity: 30%;
 }
 
+.picture {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 100%;
+    outline: 1px solid var(--separator-color);
+    background-image: url("../resources/placeholder.png");
+}
+
 li {
     list-style-type: square;
 }
 
+.vertical-separator {
+    height: auto;
+    width: 10px;
+    background-color: var(--separator-color);
+    padding: 0;
+    margin-right: 20px;
+}
+
 .page-contents {
     padding: 80px 20px;
-    background-color: rgba(256,256, 256, 0.95);
+    background-color: var(--background-color);
     max-width: 950px;
-    outline: solid 2px #000000;
+    outline: var(--separator-color) 2px solid;
 
 }
+
+#background-layer {
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    min-height: calc(100vh - 160px);
+    z-index: -2;
+    background-image: url("../resources/rainbow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 @media all and (min-width: 950px){
 
@@ -73,10 +90,14 @@ li {
         padding: 0 20px 80px 20px;
     }
 
+    #background-layer {
+        margin-left: 210px;
+        width: calc(100% - 210px)
+    }
+
     h1 {
         font-size: 50px;
         padding-top: 40px;
         padding-bottom: 40px;
     }
-
 }

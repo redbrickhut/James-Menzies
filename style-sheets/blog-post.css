@@ -105,6 +105,11 @@
 
     .article-segment {
         flex-wrap: nowrap;
+        margin-top: 40px;
+    }
+
+    .article-segment:nth-child(even) {
+        flex-direction: row-reverse;
     }
 
     .article-text {

@@ -47,13 +47,15 @@ body {
 .horizontal-overlay {
     height: 80px;
     width: 100%;
-    background-color: #2c3632;
-    z-index: 1;
+    background-color: var(--solid-primary-color);
+    z-index: 2;
 }
 
-#menu-icon {
-    transition: transform 1s,
+.horizontal-overlay h2 {
+
 }
+
+
 
 header.horizontal-overlay {
     position: fixed;
@@ -71,7 +73,7 @@ header.horizontal-overlay h2 {
 #menu {
     position: fixed;
     display: none;
-    background-color: #899593;
+    background-color: var(--solid-secondary-color);
     width: 100%;
 }
 
@@ -82,16 +84,18 @@ header.horizontal-overlay h2 {
     padding-top: 15px;
     padding-bottom: 15px;
     vertical-align: center;
-    background-color: #899593;
-    border-bottom: solid 1px #2c3632;
+    background-color: var(--solid-secondary-color);
+    border-bottom: solid 1px var(--separator-color);
     text-decoration: none;
-    color: #000000;
+    color: var(--background-color);
+
 }
 
 .menu-item:hover {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #d3d4d6;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 #menu-trigger:checked ~ #site-navigation #menu-icon {
@@ -114,7 +118,7 @@ header.horizontal-overlay h2 {
 
 .menu-item:hover {
 
-    border: solid 1px #2c3632;
+    border: solid 1px var(--separator-color);
     transition: width 1s ease;
 
 
@@ -122,7 +126,7 @@ header.horizontal-overlay h2 {
 
 .menu-item:hover + .menu-item {
 
-    border-top: solid 1px #2c3632;
+    border-top: solid 1px var(--separator-color);
 }
 
 #external-links {
@@ -141,19 +145,12 @@ header.horizontal-overlay h2 {
     max-width: 340px;
 }
 
-#background-layer {
-    width: 100%;
-    position: fixed;
-    top: 80px;
-    min-height: calc(100vh - 160px);
-    z-index: -2;
-    background-image: url("../resources/rainbow.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 @media all and (min-width: 600px){
 
+    #overlay {
+        position: absolute;
+        top: 0;
+    }
     #menu {
         width: 0%;
     }
@@ -201,11 +198,6 @@ header.horizontal-overlay h2 {
         display: block;
     }
 
-    #background-layer {
-        margin-left: 210px;
-        width: calc(100% - 210px)
-    }
-
     #menu-trigger:checked ~ #menu {
         justify-content: inherit;
         animation: none;
@@ -225,32 +217,32 @@ header.horizontal-overlay h2 {
 @keyframes widen {
     0% {
         width: 0%;
-        background-color: #2c3632;
+        background-color: var(--solid-primary-color);
     }
 
     50% {
-        background-color: #2c3632;
+        background-color: var(--solid-primary-color);
     }
 
     100% {
         width: 25%;
-        background-color: #899593;
+        background-color: var(--solid-secondary-color);
     }
 }
 
 @keyframes stretch {
     0% {
         max-height: 0;
-        background-color: #2c3632;
+        background-color: var(--solid-primary-color);
     }
 
     50% {
-        background-color: #2c3632;
+        background-color: var(--solid-primary-color);
     }
 
     100% {
         max-height: 500px;
-        background-color: #899593;
+        background-color: var(--solid-secondary-color);
     }
 }
 

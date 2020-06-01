@@ -41,6 +41,10 @@ iframe {
         margin-bottom: 70px;
     }
 
+    section:last-child {
+        margin-bottom: 0px;
+    }
+
     section h2 {
         text-align: left;
     }
