@@ -73,7 +73,10 @@
 
 @media all and (min-width: 600px){
 
-
+    #page-wrapper {
+        margin: 80px 0 0 0;
+        height: calc(100vh - 160px);
+    }
 
     .page-contents {
         display: flex;
@@ -83,6 +86,7 @@
         height: 100%;
         max-width: inherit;
         margin: inherit;
+        padding-top: 0;
     }
 
 
@@ -152,13 +156,14 @@
 
 @media all and (min-width: 950px) {
 
-    .page-contents {
-        margin: 80px auto 0 auto;
-        max-width: 1100px;
-        height: calc(100vh - 160px);
-        z-index: -1;
+    #page-wrapper {
+        margin: 80px 0 0 210px;
     }
 
+    .page-contents {
+        margin: auto;
+        max-width: 1100px;
+    }
 }
 
 @media all and (min-width: 600px) and (max-height: 920px) {
