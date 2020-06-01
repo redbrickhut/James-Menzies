@@ -1,4 +1,3 @@
-
 #profile-picture.picture {
 
     background-image: url("../resources/about.jpg");
@@ -14,14 +13,12 @@
     justify-content: center;
 }
 
-
 @media all and (min-width: 600px) {
 
 
     ul {
         padding-left: 15px;
     }
-
 
     #introduction {
         display: grid;
@@ -45,7 +42,6 @@
         grid-column: 1;
         grid-row: 1;
     }
-
 
     #bullet-points {
         display: flex;

@@ -33,8 +33,6 @@ body {
     outline: none;
 }
 
-
-
 #menu-trigger {
     position: fixed;
     width: 75px;
@@ -50,12 +48,6 @@ body {
     background-color: var(--solid-primary-color);
     z-index: 2;
 }
-
-.horizontal-overlay h2 {
-
-}
-
-
 
 header.horizontal-overlay {
     position: fixed;
@@ -119,9 +111,6 @@ header.horizontal-overlay h2 {
 .menu-item:hover {
 
     border: solid 1px var(--separator-color);
-    transition: width 1s ease;
-
-
 }
 
 .menu-item:hover + .menu-item {
@@ -151,11 +140,10 @@ header.horizontal-overlay h2 {
         position: absolute;
         top: 0;
     }
+
     #menu {
         width: 0%;
     }
-
-
 
     #menu-trigger:checked ~ #menu {
         justify-content: flex-start;
@@ -176,7 +164,6 @@ header.horizontal-overlay h2 {
 }
 
 @media all and (min-width: 950px) {
-
 
     #menu-icon {
         visibility: hidden;
@@ -215,6 +202,7 @@ header.horizontal-overlay h2 {
 }
 
 @keyframes widen {
+
     0% {
         width: 0%;
         background-color: var(--solid-primary-color);
@@ -231,6 +219,7 @@ header.horizontal-overlay h2 {
 }
 
 @keyframes stretch {
+
     0% {
         max-height: 0;
         background-color: var(--solid-primary-color);

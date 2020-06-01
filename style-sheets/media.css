@@ -28,12 +28,9 @@ section h2 {
     margin: auto;
 }
 
-
 iframe {
     height: 169px;
 }
-
-
 
 @media all and (min-width: 600px) {
 
@@ -60,11 +57,9 @@ iframe {
         margin: 0;
     }
 
-
     iframe {
         height: 315px;
         width: 560px;
     }
-
 }
 

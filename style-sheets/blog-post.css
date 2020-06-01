@@ -61,8 +61,6 @@
     flex-wrap: wrap;
 }
 
-
-
 .article-text {
     flex-basis: 100%;
 }
@@ -119,6 +117,5 @@
     .article-media {
         flex-basis: 35%;
     }
-
 }
 

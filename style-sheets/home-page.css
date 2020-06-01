@@ -3,10 +3,8 @@
     margin: auto;
 }
 
-
 #mobile-only-banner {
     margin-top: 20px;
-    background-image: url("../resources/mobile-banner.jpg");
     padding-top: 33%;
 }
 
