@@ -56,10 +56,27 @@
 
 }
 
+.article-segment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.article-text {
+    flex-basis: 100%;
+}
+.article-media {
+    flex-basis:  70%;
+    text-align: center;
+    margin: auto;
+}
+
 @media all and (min-width: 600px) {
 
     #introduction {
         flex-wrap: nowrap;
+        justify-content: center;
     }
 
     #author-name {
@@ -73,8 +90,8 @@
     }
 
     #snippet {
-        flex-basis: 45%;
-        margin: 0 auto 0 0;
+        flex-basis: 40%;
+        margin: 0;
     }
 
     #introduction-details {
@@ -84,6 +101,18 @@
 
     #author-picture {
         margin-right: 20px;
+    }
+
+    .article-segment {
+        flex-wrap: nowrap;
+    }
+
+    .article-text {
+        flex-basis: 60%;
+    }
+
+    .article-media {
+        flex-basis: 35%;
     }
 
 }
