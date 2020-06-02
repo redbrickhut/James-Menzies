@@ -1,4 +1,4 @@
-#profile-picture.picture {
+#profile-picture.image {
 
     background-image: url("../resources/about/about.jpg");
     padding-top: 80%;
@@ -36,7 +36,7 @@
         font-size: 20px;
     }
 
-    #profile-picture.picture {
+    #profile-picture.image {
         width: 100%;
         padding-top: 130%;
         grid-column: 1;
