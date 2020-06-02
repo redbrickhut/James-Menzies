@@ -43,7 +43,7 @@ body {
 }
 
 .horizontal-overlay {
-    height: 80px;
+    height: var(--horizantal-bar-width);
     width: 100%;
     background-color: var(--solid-primary-color);
     z-index: 2;
@@ -160,7 +160,6 @@ header.horizontal-overlay h2 {
 
     .menu-item:hover {
 
-
         width: 110%;
     }
 }
@@ -179,7 +178,7 @@ header.horizontal-overlay h2 {
         position: fixed;
         top: 0;
         height: 100vh;
-        width: 210px;
+        width: var(--sidebar-width);
         display: block;
     }
 
@@ -190,7 +189,7 @@ header.horizontal-overlay h2 {
     #menu-trigger:checked ~ #menu {
         justify-content: inherit;
         animation: none;
-        width: 210px;
+        width: var(--sidebar-width);
         height: 100%;
     }
 
