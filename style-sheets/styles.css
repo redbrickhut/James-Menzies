@@ -69,9 +69,7 @@ a.text-based-link:active {
     background-image: url("../resources/other icons/placeholder.png");
 }
 
-li {
-    list-style-type: square;
-}
+
 
 .vertical-separator {
     height: auto;
@@ -86,7 +84,6 @@ li {
     background-color: var(--background-color);
     max-width: 950px;
     outline: var(--separator-color) 2px solid;
-
 }
 
 #background-layer {
@@ -110,7 +107,7 @@ li {
         margin-right: auto;
         margin-bottom: auto;
         margin-left: calc(var(--sidebar-width) + 120px);
-        padding: 0 20px 80px 20px;
+        padding: 0 20px var(--horizantal-bar-width) 20px;
     }
 
     #background-layer {
