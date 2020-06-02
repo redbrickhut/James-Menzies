@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 :root {
 
     font-family: 'Mukta', sans-serif;
+    color: var(--text-color);
+
+    /*global variables*/
     --solid-secondary-color: #177e89;
     --solid-primary-color: #084c61;
     --solid-alternate-color: #db3a34;
     --text-color: #323031;
     --background-color: rgba(150, 229, 236, 0.95);
     --separator-color: #000000;
-    color: var(--text-color)
+    --sidebar-width: 210px;
+    --horizantal-bar-width: 75px;
 }
+
+h1, h2 {
+    font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+}
+
+
 
 h1 {
     text-align: center;
@@ -27,16 +38,16 @@ a {
     text-decoration: inherit;
 }
 
-.text-based-link {
+a.text-based-link {
     font-size: 24px;
     text-decoration: underline;
 }
 
-.text-based-link:hover {
+a.text-based-link:hover {
     color: var(--solid-primary-color);
 }
 
-.text-based-link:active {
+a.text-based-link:active {
     color: var(--solid-alternate-color);
 }
 
@@ -71,7 +82,7 @@ li {
 }
 
 .page-contents {
-    padding: 80px 20px;
+    padding: var(--horizantal-bar-width) 20px;
     background-color: var(--background-color);
     max-width: 950px;
     outline: var(--separator-color) 2px solid;
@@ -81,8 +92,8 @@ li {
 #background-layer {
     width: 100%;
     position: fixed;
-    top: 80px;
-    min-height: calc(100vh - 160px);
+    top: var(--horizantal-bar-width);
+    min-height: calc(100vh - calc(2 * var(--horizantal-bar-width)));
     z-index: -2;
     background-image: url("../resources/site-background.jpg");
     background-repeat: no-repeat;
@@ -94,13 +105,17 @@ li {
 @media all and (min-width: 950px){
 
     .page-contents {
-        margin: 230px auto auto 330px;
+
+        margin-top: calc(var(--horizantal-bar-width) + 150px);
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: calc(var(--sidebar-width) + 120px);
         padding: 0 20px 80px 20px;
     }
 
     #background-layer {
-        margin-left: 210px;
-        width: calc(100% - 210px);
+        margin-left: var(--sidebar-width);
+        width: calc(100% - var(--sidebar-width));
         background-position: center;
     }
 

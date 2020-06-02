@@ -73,8 +73,8 @@
 @media all and (min-width: 600px){
 
     #page-wrapper {
-        margin: 80px 0 0 0;
-        height: calc(100vh - 160px);
+        margin: var(--horizantal-bar-width) 0 0 0;
+        height: calc(100vh - 2*var(--horizantal-bar-width));
     }
 
     .page-contents {
@@ -95,18 +95,19 @@
 
     #job-summary {
 
-        min-height: 100px;
+        min-height: 90px;
         flex-grow: 1;
-        max-height: 110px;
+        max-height: 100px;
 
     }
 
     .job-title {
-        font-size: 28px;
+        font-size: 22px;
+        font-family: 'Acme', sans-serif;
     }
 
     .horizontal-divider {
-        height: 6px;
+        height: 4px;
         width: 350px;
     }
 
@@ -156,7 +157,11 @@
 @media all and (min-width: 950px) {
 
     #page-wrapper {
-        margin: 80px 0 0 210px;
+
+        margin-top: var(--horizantal-bar-width);
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: var(--sidebar-width);
     }
 
     .page-contents {
@@ -166,7 +171,19 @@
 }
 
 @media all and (min-width: 600px) and (max-height: 920px) {
-    .directory-picture {
-        display: none;
+
+    #welcome-picture {
+        height: 100px;
+        flex-basis: 100px;
     }
+
+    #pages h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    #job-summary {
+        padding: 0;
+    }
+
 }
