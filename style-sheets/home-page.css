@@ -1,14 +1,14 @@
-.page-contents {
+main.page-contents {
     max-width: 350px;
     margin: auto;
 }
 
-#mobile-only-banner {
+main.page-contents #mobile-only-banner {
     margin-top: 20px;
     padding-top: 33%;
 }
 
-#job-summary {
+section#job-title {
     width: 75%;
     text-align: center;
     display: flex;
@@ -20,47 +20,41 @@
     color: var(--light-green);
 }
 
-.horizontal-divider {
-    background-color: #000000;
+section#job-title .horizontal-divider {
+    background-color: var(--dark-green);
+    background-image: none;
     height: 4px;
     width: 150px;
     margin: auto;
     padding: 0;
     }
 
-#welcome-picture  {
-    width: 100%;
-    padding-top: 100%;
+section#welcome figure {
+    background-image: url("../resources/home-page/james.jpg");
 }
 
-.directory-picture {
+section#directory figure {
+
     width: 100%;
     padding-top: 70%;
 }
 
-#welcome-picture {
-    background-image: url("../resources/home-page/james.jpg");
-}
-
-#pages {
+section#directory {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 
 }
 
-#pages h3 {
+section#directory h3 {
     color: var(--light-green);
+    text-align: center;
 }
 
-.directory-wrapper {
-    border: 1px #000000 solid;
+section#directory .block-based-link {
+    outline: 1px var(--dark-green) solid;
     margin-bottom: 10px;
     padding: 10px;
-}
-
-.page-name {
-    text-align: center;
 }
 
 #coder-picture {
@@ -96,7 +90,7 @@
         display: none;
     }
 
-    #job-summary {
+    section#job-title {
 
         min-height: 90px;
         flex-grow: 1;
@@ -104,12 +98,12 @@
 
     }
 
-    .job-title {
+    section#job-title span {
         font-size: 22px;
         font-family: 'Acme', sans-serif;
     }
 
-    .horizontal-divider {
+    section#job-title .horizontal-divider {
         height: 4px;
         width: 350px;
     }
@@ -119,7 +113,7 @@
         max-height: 150px;
     }
 
-    #welcome {
+    section#welcome {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
@@ -128,7 +122,7 @@
         max-width: 635px;
     }
 
-    #welcome-picture {
+    section#welcome figure {
         flex-basis: 250px;
         flex-shrink: 0;
         height: 250px;
@@ -136,13 +130,13 @@
 
     }
 
-    #greeting {
+    section#welcome figcaption {
         text-align: right;
         margin: 0 15px 0 0;
 
     }
 
-    #pages {
+    section#directory {
         flex-shrink: 1;
         flex-direction: row;
         justify-content: space-between;
@@ -150,7 +144,7 @@
         max-width: 900px;
     }
 
-    .directory-wrapper {
+    section#directory .block-based-link {
         flex-basis: 28%;
         align-items: center;
     }
@@ -175,18 +169,18 @@
 
 @media all and (min-width: 600px) and (max-height: 920px) {
 
-    #welcome-picture {
+    section#job-title {
+        padding: 0;
+    }
+
+    section#welcome figure {
         height: 100px;
         flex-basis: 100px;
     }
 
-    #pages h3 {
+    section#directory h3 {
         margin-top: 0;
         margin-bottom: 5px;
-    }
-
-    #job-summary {
-        padding: 0;
     }
 
 }
