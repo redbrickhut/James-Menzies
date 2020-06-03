@@ -17,6 +17,11 @@
     --horizantal-bar-width: 75px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2 {
     font-family: 'Acme', sans-serif;
     text-transform: uppercase;
@@ -68,8 +73,6 @@ a.text-based-link:active {
     outline: 1px solid var(--separator-color);
     background-image: url("../resources/other icons/placeholder.png");
 }
-
-
 
 .vertical-separator {
     height: auto;
