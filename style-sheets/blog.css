@@ -21,7 +21,7 @@
     justify-content: flex-end;
     max-width: 350px;
     margin: auto;
-    border-top: var(--separator-color) solid 1px;
+    border-top: var(--solid-black) solid 1px;
     padding-bottom: 15px;
 }
 

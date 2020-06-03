@@ -4,15 +4,16 @@
 :root {
 
     font-family: 'Mukta', sans-serif;
-    color: var(--text-color);
+    color: var(--dark-green);
 
     /*global variables*/
-    --solid-secondary-color: #177e89;
-    --solid-primary-color: #084c61;
-    --solid-alternate-color: #db3a34;
-    --text-color: #323031;
-    --background-color: rgba(150, 229, 236, 0.95);
-    --separator-color: #000000;
+    --light-black: #474b4f;
+    --medium-black: #222629;
+    --light-green: #86c232;
+    --dark-green: #61892f;
+    --background-color: rgba(34, 38, 41, 0.95);
+    --solid-black: #000000;
+
     --sidebar-width: 240px;
     --horizantal-bar-width: 95px;
 }
@@ -20,11 +21,13 @@
 body {
     margin: 0;
     padding: 0;
+
 }
 
 h1, h2 {
     font-family: 'Acme', sans-serif;
     text-transform: uppercase;
+    color: var(--light-green);
 }
 
 
@@ -49,12 +52,9 @@ a.text-based-link {
 }
 
 a.text-based-link:hover {
-    color: var(--solid-primary-color);
+    color: var(--light-green);
 }
 
-a.text-based-link:active {
-    color: var(--solid-alternate-color);
-}
 
 .block-based-link:hover {
     opacity: 50%;
@@ -70,14 +70,15 @@ a.text-based-link:active {
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 100%;
-    outline: 1px solid var(--separator-color);
+    outline: 1px solid var(--solid-black);
     background-image: url("../resources/other icons/placeholder.png");
+    filter: brightness(75%);
 }
 
 .vertical-separator {
     height: auto;
     width: 10px;
-    background-color: var(--separator-color);
+    background-color: var(--light-green);
     padding: 0;
     margin-right: 20px;
 }
@@ -86,7 +87,7 @@ a.text-based-link:active {
     padding: var(--horizantal-bar-width) 20px;
     background-color: var(--background-color);
     max-width: 950px;
-    outline: var(--separator-color) 2px solid;
+    outline: var(--solid-black) 2px solid;
 }
 
 #background-layer {
