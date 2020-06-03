@@ -12,6 +12,18 @@ section:last-child {
     margin-bottom: 0px;
 }
 
+section#introduction {
+
+    max-width: 600px;
+    margin: auto;
+}
+
+section#introduction span {
+    text-align: center;
+    font-size: 16px;
+}
+
+
 section#photos .flex-container {
     display: flex;
     flex-wrap: wrap;
