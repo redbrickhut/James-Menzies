@@ -114,6 +114,7 @@ a.text-based-link:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    filter: brightness(70%);
 }
 
 
