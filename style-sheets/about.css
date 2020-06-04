@@ -48,11 +48,26 @@ section#sales-pitch #skills {
     flex-basis: 100%;
 }
 
+
+
 section#sales-pitch #skills .flex-container {
-    padding-top: 50%;
+    padding: 0;
+    list-style-type: none;
     width: 100%;
-    outline: var(--light-green) 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#sales-pitch #skills .flex-container li {
+
+    color: var(--light-green);
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 15px;
+    outline: 2px solid var(--light-green);
+    margin: 10px;
     background-color: var(--medium-black);
+
 }
 
 @media all and (min-width: 600px) {
@@ -86,6 +101,10 @@ section#sales-pitch #skills .flex-container {
 
     section#sales-pitch #skills {
         flex-basis: 47%;
+    }
+
+    section#sales-pitch #skills .flex-container li {
+        font-size: 22px;
     }
 
 }
