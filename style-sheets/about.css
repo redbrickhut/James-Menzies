@@ -36,7 +36,6 @@ section#sales-pitch {
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 section#sales-pitch #nutshell {
@@ -73,6 +72,19 @@ section#sales-pitch #skills .flex-container {
 
     section#introduction #key-details li {
         margin-bottom: 15px;
+    }
+
+    section#sales-pitch {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    section#sales-pitch #nutshell {
+        flex-basis: 47%;
+    }
+
+    section#sales-pitch #skills {
+        flex-basis: 47%;
     }
 
 }

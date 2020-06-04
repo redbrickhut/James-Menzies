@@ -46,7 +46,7 @@ h1 {
 }
 
 a {
-    color: inherit;
+    color: var(--light-green);
     text-decoration: inherit;
 }
 
@@ -56,7 +56,7 @@ a.text-based-link {
 }
 
 a.text-based-link:hover {
-    color: var(--light-green);
+    color: var(--dark-green);
 }
 
 
