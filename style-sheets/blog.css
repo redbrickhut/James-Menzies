@@ -15,6 +15,7 @@ section#contents .post .arrow-button {
     flex-basis: 40px;
     flex-shrink: 0;
     flex-grow: 0;
+    background-color: transparent;
 }
 
 section#contents .post {
@@ -60,7 +61,6 @@ section#contents .post .details span strong {
 
     main.page-contents {
         padding: var(--horizantal-bar-width) 20px;
-        background-color: var(--background-color);
         max-width: 950px;
         outline: var(--solid-black) 2px solid;
     }
@@ -82,7 +82,6 @@ section#contents .post .details span strong {
         display: block;
         flex-basis: 50%;
         padding-top: 30%;
-        background-color: #899593;
         max-width: 375px;
     }
 

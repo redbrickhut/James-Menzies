@@ -5,6 +5,7 @@ nav .icon {
     height: 65px;
     padding: 0;
     outline: none;
+    background-color: transparent;
 }
 
 nav #menu-trigger {

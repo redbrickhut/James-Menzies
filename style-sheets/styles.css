@@ -78,6 +78,7 @@ a.text-based-link:hover {
     outline: 1px solid var(--solid-black);
     background-image: url("../resources/other icons/placeholder.png");
     filter: brightness(75%);
+    background-color: var(--light-black);
 }
 
 .vertical-separator {
