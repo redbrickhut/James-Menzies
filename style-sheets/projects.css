@@ -20,21 +20,15 @@ article {
     margin: 40px auto;
 }
 
-
 article.project figure {
-    display: none;
-    padding-top: 50%;
-}
-
-article.project figure:first-child {
-    display: block;
+    padding-top: 75%;
 }
 
 article.project aside {
     margin-bottom: 30px;
 }
 
-article.project .flex-container h3 {
+article.project .project-text h3 {
     margin: 0;
     color: var(--light-green);
 }
@@ -47,7 +41,6 @@ article.project .project-link {
     align-items: center;
     padding: 15px;
     outline: var(--light-green) solid 1px;
-
 }
 
 article.project .vertical-separator {
@@ -63,7 +56,6 @@ article.project .project-link span::after {
 }
 
 
-
 @media all and (min-width: 600px){
 
     section#introduction {
@@ -71,11 +63,11 @@ article.project .project-link span::after {
         flex-direction: row-reverse;
         align-items: stretch;
         max-width: 650px;
-        margin: auto;
+        margin: 0 auto 70px auto;
     }
 
 
-    section#introduction .flex-container {
+    section#introduction .project-text {
         flex-basis: 65%;
         padding-left: 30px;
     }
@@ -91,45 +83,29 @@ article.project .project-link span::after {
         margin-top: 0;
     }
 
-    .project-wrapper {
+    article.project .flex-container {
 
         margin-top: 50px;
-        display: grid;
-        grid-template-columns: 48% 48%;
-        column-gap: 4%;
-        row-gap: 20px;
-        font-size-adjust: none;
-    }
-
-    .project-title {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-        text-align: center;
-    }
-
-    .project-image-container {
-        grid-column: 1;
-        grid-row: 2;
         display: flex;
-        flex-direction: column;
-
+        flex-wrap: nowrap;
     }
 
-    .project-image {
-        display: block;
-        margin-bottom: 10%;
+
+    article.project aside {
+        flex-grow: 3;
+        flex-shrink: 3;
+        margin-bottom: 0;
     }
 
-    .project-summary {
-        grid-column: 2;
-        grid-row: 2;
+
+    article.project .project-text {
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-left: 20px;
     }
 
-    .project-wrapper:nth-child(odd) .project-image-container {
-        grid-column: 2;
-    }
 
-    .project-wrapper:nth-child(odd) .project-summary {
-        grid-column: 1;
-    }
+
+
 }

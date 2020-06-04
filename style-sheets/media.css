@@ -24,7 +24,7 @@ section#introduction span {
 }
 
 
-section#photos .flex-container {
+section#photos .project-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

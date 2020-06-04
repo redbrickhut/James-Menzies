@@ -48,7 +48,7 @@ section#sales-pitch #skills {
     flex-basis: 100%;
 }
 
-section#sales-pitch #skills .flex-container {
+section#sales-pitch #skills .project-text {
     padding-top: 50%;
     width: 100%;
     outline: var(--light-green) 1px solid;
