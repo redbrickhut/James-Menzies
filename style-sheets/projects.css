@@ -83,6 +83,10 @@ article.project .project-link span::after {
         margin-top: 0;
     }
 
+    article.project {
+        margin: 60px auto;
+    }
+
     article.project .flex-container {
 
         margin-top: 50px;
@@ -105,7 +109,8 @@ article.project .project-link span::after {
         margin-left: 20px;
     }
 
+    article.project:nth-child(odd) .flex-container {
 
-
-
+        flex-direction: row-reverse;
+    }
 }
