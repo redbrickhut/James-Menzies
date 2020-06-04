@@ -1,6 +1,12 @@
 
 
-#introduction-photo {
+main.page-contents {
+    max-width: 350px;
+    margin: auto;
+}
+
+
+section#introduction figure {
     display: none;
 }
 
