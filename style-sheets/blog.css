@@ -15,52 +15,66 @@ section#introduction figure {
     flex-basis: 40px;
     flex-shrink: 0;
     flex-grow: 0;
-    padding-top: 40px;
-    height: 0;
-    outline: none;
-    background-image: url("../resources/other icons/arrow.png");
 }
 
-.post-link {
+section#contents .post {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     max-width: 350px;
     margin: auto;
     border-top: var(--solid-black) solid 1px;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
-.post-details {
+section#contents .post .details {
     display: flex;
     flex-direction: column;
     text-align: right;
 }
 
-.post-details.tags {
+section#contents .post .details tags {
     text-align: left;
 }
 
 
-.post-summary {
+section#contents .post p {
     display: none;
+}
+
+section#contents .post .details span {
+    text-transform: none;
+}
+
+section#contents .post .details span strong {
+    text-transform: uppercase;
+    margin-right: 8px;
 }
 
 @media all and (min-width: 600px) {
 
-    #introduction {
+
+    main.page-contents {
+        padding: var(--horizantal-bar-width) 20px;
+        background-color: var(--background-color);
+        max-width: 950px;
+        outline: var(--solid-black) 2px solid;
+    }
+
+
+    section#introduction {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 70px;
     }
 
-    #introduction-summary {
+    section#introduction p {
         flex-basis: 45%;
         margin-right: 30px;
     }
 
 
-    #introduction-photo {
+    section#introduction figure {
         display: block;
         flex-basis: 50%;
         padding-top: 30%;
@@ -80,6 +94,19 @@ section#introduction figure {
     .post-link {
         max-width: 100%;
         justify-content: space-between;
+    }
+}
+
+@media all and (min-width: 950px) {
+
+    main.page-contents {
+
+        margin-top: calc(var(--horizantal-bar-width) + 150px);
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: calc(var(--sidebar-width) + 120px);
+        padding: 0 20px var(--horizantal-bar-width) 20px;
+
     }
 }
 
