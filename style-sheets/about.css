@@ -1,58 +1,78 @@
-#profile-picture.image {
-
-    background-image: url("../resources/about/about.jpg");
-    padding-top: 80%;
-    width: 60%;
-    margin: auto;
-    background-position: top;
-}
-
-#resume-link-wrapper {
+main #resume {
     display: flex;
     position: relative;
     justify-content: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Acme, sans-serif;
+}
+
+main section {
+    margin-top: 30px;
+}
+
+section#introduction {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: auto;
+}
+
+section#introduction figure {
+
+    background-image: url("../resources/about/about.jpg");
+    background-position: top;
+    flex-basis: 100%;
+}
+
+section#introduction #key-details .key {
+
+    color: var(--light-green);
+    margin-right: 7px;
+}
+
+section#sales-pitch {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section#sales-pitch #nutshell {
+
+    flex-basis: 100%;
+}
+
+section#sales-pitch #skills {
+
+    flex-basis: 100%;
+}
+
+section#sales-pitch #skills .flex-container {
+    padding-top: 50%;
+    width: 100%;
+    outline: var(--light-green) 1px solid;
+    background-color: var(--medium-black);
 }
 
 @media all and (min-width: 600px) {
 
-
-    ul {
-        padding-left: 15px;
+    main section {
+        margin-top: 50px;
     }
 
-    #introduction {
-        display: grid;
-        grid-template-columns: 40% 58%;
-        column-gap: 2%;
-        row-gap: 30px;
+    section#introduction {
+        max-width: 600px;
     }
 
-    #introduction-summary {
-        grid-column: 2;
-        grid-row: 1;
+    section#introduction figure {
+        flex-basis: 50%;
+        padding-top: 50%;
     }
 
-    #introduction-summary li {
-        font-size: 20px;
+    section#introduction #key-details li {
+        margin-bottom: 15px;
     }
 
-    #profile-picture.image {
-        width: 100%;
-        padding-top: 130%;
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    #bullet-points {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #bullet-points li {
-        flex-basis: 47%;
-    }
-
-    #resume-link-wrapper {
-        font-size: 24px;
-    }
 }
