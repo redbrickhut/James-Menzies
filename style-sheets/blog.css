@@ -10,7 +10,7 @@ section#introduction figure {
     display: none;
 }
 
-.arrow-button {
+section#contents .post .arrow-button {
     margin-left: 8px;
     flex-basis: 40px;
     flex-shrink: 0;
@@ -82,16 +82,16 @@ section#contents .post .details span strong {
         max-width: 375px;
     }
 
-    .post-summary {
+    section#contents .post p {
         flex-basis: 45%;
         display: block;
     }
 
-    .post-details {
+    section#contents .post .details {
         flex-basis: 45%
     }
 
-    .post-link {
+    section#contents .post {
         max-width: 100%;
         justify-content: space-between;
     }
