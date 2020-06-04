@@ -48,7 +48,7 @@ section#sales-pitch #skills {
     flex-basis: 100%;
 }
 
-section#sales-pitch #skills .project-text {
+section#sales-pitch #skills .flex-container {
     padding-top: 50%;
     width: 100%;
     outline: var(--light-green) 1px solid;
@@ -58,7 +58,7 @@ section#sales-pitch #skills .project-text {
 @media all and (min-width: 600px) {
 
     main section {
-        margin-top: 50px;
+        margin-top: 35px;
     }
 
     section#introduction {
@@ -66,8 +66,9 @@ section#sales-pitch #skills .project-text {
     }
 
     section#introduction figure {
-        flex-basis: 50%;
-        padding-top: 50%;
+        flex-basis: 45%;
+        padding-top: 45%;
+        flex-shrink: 1;
     }
 
     section#introduction #key-details li {
