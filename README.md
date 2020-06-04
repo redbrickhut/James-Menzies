@@ -20,7 +20,7 @@ There are four core purposes of this website:
 
 ### The Navigation Shell
 
-A big component of the design brief was to both create a uniform look and to create a responsive site layout with distinct mobile and desktop versions. No component plays a bigger role in this than the navigation shell. It has three distinct parts:
+A big component of the design brief was to both create a uniform look and to create a responsive site layout with distinct mobile and desktop versions. No component plays a bigger role in this than the navigation shell due to its sheer presence on the screen. It has three distinct parts:
 
 1. A header, which displays the name of the current page, as well as a menu button.
 2. A menu, which allows the user to travel to a different page
@@ -31,8 +31,24 @@ It also has three distinct modes:
 | Name | Width | Function |
 | --- | --- | ---|
 | Mobile | <600px | Menu is hidden by default, pressing the menu button will cause the menu to appear vertically. The effect is animated. | 
-| Tablet | <950px | As above, but menu appears from the left hand side. |
+| Tablet | 600 - 950px | As above, but menu appears from the left hand side. |
 |Desktop | >950px | Menu is always visible, menu button is disabled and removed. Icons are repositioned.
+
+The rest of the display is complemented by a background image which is fixed in place, and then a slightly transparent content layer that scrolls, creating a parallax effect. As the screen widens, I restrict the pages content to a width of 950 pixels. This protects the layout of the page while allowing the interest of the backdrop behind to shine through. \
+\
+The implementation for all of this is contained in the styles.css and nav.css, allowing for easy reusability.
+
+### Colour Scheme
+
+Given that my website has extensive written content, I wanted to make sure that I found a colour scheme that would cause minimal eye strain. To that end I decided to go with two shades of off-black, as well as two shades of green which contrast nicely. I've utilized the lighter version of the green to draw the viewer to particular points of interest (such as links and headers). I have stored all of these colours in the root component of styles.css, so if I want to add colour schemes down the track it will be an efficient process.
+
+### The Home Page
+
+My main concern with the home page was to efficiently direct the user to the part of the site they wished to visit. The user is greeted with a simple welcome message, followed by graphical links to the "About Me", "My Projects" and "Media" pages. Once the screen widens past 600px, I wanted all of this information to displayed on the screen without any scrolling required. To achieve this, I used nested flex boxes, both horizontal and vertical, which mean that even wide but not tall displays can still manage to fit all of the page's content. The default page content dimensions have also been extensively overriden.
+
+### The About Page
+
+
 
 
 
