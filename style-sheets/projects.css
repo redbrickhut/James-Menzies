@@ -112,4 +112,9 @@ article.project .project-link span::after {
 
         flex-direction: row-reverse;
     }
+
+    article.project:nth-child(odd) .project-text {
+        margin-left: 0;
+        margin-right: 20px;
+    }
 }
