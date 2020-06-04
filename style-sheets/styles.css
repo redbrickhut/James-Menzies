@@ -28,11 +28,12 @@ figure {
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, span {
     font-family: 'Acme', sans-serif;
     text-transform: uppercase;
     color: var(--light-green);
 }
+
 
 
 
@@ -86,6 +87,14 @@ a.text-based-link:hover {
     background-color: var(--light-green);
     padding: 0;
     margin-right: 20px;
+}
+
+.arrow-button {
+    width: 40px;
+    padding-top: 40px;
+    height: 0;
+    outline: none;
+    background-image: url("../resources/other icons/arrow.png");
 }
 
 .page-contents {
