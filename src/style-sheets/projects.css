@@ -54,6 +54,10 @@ article.project .project-link span::after {
     content: "Click here to check out this project"
 }
 
+article.project .project-link .arrow-button {
+    background-color: transparent;
+}
+
 
 @media all and (min-width: 600px){
 

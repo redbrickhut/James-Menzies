@@ -8,6 +8,8 @@ main.page-contents .back-button #back-icon {
     background-image: url("../resources/other icons/back-arrow.png");
     width: 40px;
     padding-top: 40px;
+    outline: none;
+    background-color: transparent;
 }
 
 main.page-contents .back-button span {
