@@ -67,6 +67,7 @@ section#directory .block-based-link {
 
 #person-picture {
     background-image: url("../resources/home-page/person.jpg");
+    background-position: top;
 }
 
 @media all and (min-width: 600px){
