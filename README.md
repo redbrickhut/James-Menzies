@@ -48,6 +48,20 @@ My main concern with the home page was to efficiently direct the user to the par
 
 ### The About Page
 
+I wanted to make sure that the resume was clearly visible, so I included it at the top of the page and made use of colouring to make it stand out. Another point of interest is the skills section, where I style list elements to create badge-like objects.
+
+### Projects
+
+I was aware that listing my projects had the potential to create a rather monotone experience, so I used some nth child pseudo selectors to reverse the layout design. 
+
+### Media
+
+The point of this page is to validate my credentials as a musician. Stylistically not too much is required, through I do use a flex box to dynamically resize the image components.
+
+### Blogs
+
+This is very similar in layout to the Projects page. One of the compromises I had to make was removing the teaser text for the post when scaling to the mobile design. Each post takes the user to a discrete page to read the article. For the post, one of the challenges was to get the small elements that comprise the introduction to align and render aesthetically.
+
 
 
 

@@ -122,3 +122,12 @@ article.project .project-link .arrow-button {
         margin-right: 20px;
     }
 }
+
+#SLBD1 {
+    background-image: url("../resources/projects/batchdownload.png");
+    background-position: top;
+}
+
+#AutoComplete1 {
+    background-image: url("../resources/projects/autocomplete.png");
+}
