@@ -30,7 +30,8 @@ section#job-title .horizontal-divider {
     }
 
 section#welcome figure {
-    background-image: url("../resources/home-page/james.jpg");
+    background-image: url("../resources/home-page/welcome.jpg");
+    filter: none;
 
 }
 
@@ -60,9 +61,15 @@ section#directory .block-based-link {
 }
 
 #coder-picture {
+
+    background-image: url("../resources/home-page/coder.jpg");
+    filter: none;
 }
 
 #musician-picture {
+
+    background-image: url("../resources/about/about.jpg");
+    background-position: top;
 }
 
 #person-picture {

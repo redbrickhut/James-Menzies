@@ -10,6 +10,10 @@ section#introduction figure {
     display: none;
 }
 
+section#introduction #blog-photo {
+    background-image: url("../resources/blog.jpg");
+}
+
 section#contents .post .arrow-button {
     margin-left: 8px;
     flex-basis: 40px;
