@@ -4,6 +4,7 @@ main article {
 
 section#introduction figure {
     display: none;
+    background-image: url("../resources/coder.png");
 }
 
 section#introduction #github-link {
