@@ -36,6 +36,10 @@ section#welcome figure {
 
 }
 
+section#welcome figcaption {
+    color: var(--light-green);
+}
+
 section#directory figure {
 
     width: 100%;
