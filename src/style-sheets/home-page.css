@@ -53,6 +53,8 @@ section#directory {
 section#directory h3 {
     color: var(--light-green);
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 section#directory .block-based-link {
@@ -106,7 +108,7 @@ section#directory .block-based-link {
         min-height: 90px;
         flex-grow: 1;
         max-height: 100px;
-
+        padding: 0;
     }
 
     section#job-title span {
@@ -161,6 +163,35 @@ section#directory .block-based-link {
         background-color: var(--medium-black);
     }
 
+    section#directory .block-based-link figure {
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 600px) and (min-height: 750px) {
+
+    section#directory .block-based-link figure {
+        display: block;
+    }
+}
+
+@media all and (min-width: 600px) and (min-height: 965px) {
+
+    section#job-title {
+        padding-top: 30px;
+    }
+
+    section#welcome figure {
+        height: 250px;
+        flex-basis: 250px;
+    }
+
+    section#directory h3 {
+        margin: 15px 0;
+    }
+
+
 }
 
 @media all and (min-width: 950px) {
@@ -179,26 +210,3 @@ section#directory .block-based-link {
     }
 }
 
-@media all and (min-width: 600px) and (max-height: 965px) {
-
-    section#job-title {
-        padding: 0;
-    }
-
-    section#welcome figure {
-        height: 100px;
-        flex-basis: 100px;
-    }
-
-    section#directory h3 {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-
-}
-
-@media all and (min-width: 600px) and (max-height: 750px) {
-    section#directory .block-based-link figure {
-        display: none;
-    }
-}
