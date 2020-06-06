@@ -84,14 +84,14 @@ Due to the relative simplicity of the website, most of it is accessible within a
 * Github
 
 ## Screenshots
-![](docs/mobile-view.png)\
-The phone version's menu.
+1. The phone version's menu
+2. The about me section with the menu rendering over the content to preserve space.
+3. Full screen shot of the projects page.
 
-![](docs/tablet-view.png)\
-The about me section with the menu rendering over the content to preserve space.\
-\
-![](docs/full-screen.png)\
-Full screen shot of the projects page.
-
+![](docs/mobile-view.png)
+<br><br>
+![](docs/tablet-view.png)
+<br><br>
+![](docs/full-screen.png)
 
 
