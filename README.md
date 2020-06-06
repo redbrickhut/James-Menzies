@@ -44,7 +44,11 @@ Given that my website has extensive written content, I wanted to make sure that 
 
 ### The Home Page
 
-My main concern with the home page was to efficiently direct the user to the part of the site they wished to visit. The user is greeted with a simple welcome message, followed by graphical links to the "About Me", "My Projects" and "Media" pages. Once the screen widens past 600px, I wanted all of this information to displayed on the screen without any scrolling required. To achieve this, I used nested flex boxes, both horizontal and vertical, which mean that even wide but not tall displays can still manage to fit all of the page's content. The default page content dimensions have also been extensively overriden.
+My main concern with the home page was to efficiently direct the user to the part of the site they wished to visit. The user is greeted with a simple welcome message, followed by graphical links to the "About Me", "My Projects" and "Media" pages. \
+\
+Once the screen widens past 600px, I wanted all of this information to displayed on the screen without any scrolling required. To achieve this, I used nested flex boxes, both horizontal and vertical, which mean that even wide but not tall displays can still manage to fit all of the page's content. The default page content dimensions have also been extensively overriden. \
+\
+On certain mediums (such as a MacBook Air not in full screen mode), the screen gets quite wide but has limited height. I've needed to unload some elements to retain the page's integrity.
 
 ### The About Page
 
@@ -80,6 +84,14 @@ Due to the relative simplicity of the website, most of it is accessible within a
 * Github
 
 ## Screenshots
+![](docs/mobile-view.png)\
+The phone version's menu.
+
+![](docs/tablet-view.png)\
+The about me section with the menu rendering over the content to preserve space.\
+\
+![](docs/full-screen.png)\
+Full screen shot of the projects page.
 
 
 
