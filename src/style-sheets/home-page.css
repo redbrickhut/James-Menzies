@@ -78,7 +78,7 @@ section#directory .block-based-link {
     background-position: top;
 }
 
-@media all and (min-width: 600px){
+@media all and (min-width: 600px) and (min-height: 740px){
 
     #page-wrapper {
         margin: var(--horizantal-bar-width) 0 0 0;
@@ -162,7 +162,7 @@ section#directory .block-based-link {
 
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: 950px) and (min-height: 740px) {
 
     #page-wrapper {
 
