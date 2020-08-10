@@ -4,8 +4,8 @@
 
 ## Target Audience
 
-Given my background as a professional musician, I have a rare opportunity to corner an area of the market that most programmers don't. This namely being musicians who are in need of a developer, but also require someone who has a knowledge of the nuances and jargon of the musical profession as well.\
-\
+Given my background as a professional musician, I have a rare opportunity to corner an area of the market that most programmers don't. This namely being musicians who are in need of a developer, but also require someone who has a knowledge of the nuances and jargon of the musical profession as well.
+
 Whilst the intention is to optimize my website towards this demographic, I am mindful to make sure that it caters towards all potential employers as well.
 ## Purpose of Website
 
@@ -16,7 +16,6 @@ There are four core purposes of this website:
 4. I want to showcase my life as a professional musician. The aim is to create a unique impression for those who aren't from my background, and to affirm my integrity to those that are.
 
 ## Functionality and Features
-
 
 ### The Navigation Shell
 
