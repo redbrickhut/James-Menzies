@@ -1,6 +1,6 @@
 # Portfolio for James Menzies
 
-**Required External Links:**   [Github Repo](https://github.com/redbrickhut/James_Menzies_Portfolio) |  [Hosted Website](src/html/index.html) | [Wireframes](docs/wireframes.pdf) 
+**Required External Links:**   [Github Repo](https://github.com/redbrickhut/James_Menzies_Portfolio) |  [Hosted Website](https://redbrickhut.github.io/MenziesPortfolioPublic/src/html/index.html) | [Wireframes](docs/wireframes.pdf) 
 
 ## Target Audience
 
