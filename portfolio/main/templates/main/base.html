@@ -3,18 +3,19 @@
 <html lang="en">
 <head>
 
-    {% if title %}
+{% if title %}
     <title>James Menzies: {{ title }}</title>
-    {% else %}
+{% else %}
     <title>James Menzies: Coder</title>
-    {% endif %}
+{% endif %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'stylesheets/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'stylesheets/nav.css' %}">
-    {% block head %}
-    {% endblock %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="{% static 'stylesheets/styles.css' %}">
+<link rel="stylesheet" href="{% static 'stylesheets/nav.css' %}">
+
+{% block head %}
+{% endblock %}
 
 </head>
 <body>
@@ -53,12 +54,15 @@
 
 <div id="background-layer"></div>
 
-<div id="page-wrapper">
+{% if page_wrapper %}
+    <div id="page-wrapper">
+{% endif %}
     <main class="page-contents">
         {% block contents %}
         {% endblock %}
     </main>
-</div>
-
+{% if page_wrapper %}
+    </div>
+{% endif %}
 </body>
 </html>

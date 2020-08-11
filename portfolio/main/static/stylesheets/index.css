@@ -30,11 +30,6 @@ section#job-title .horizontal-divider {
     padding: 0;
     }
 
-section#welcome figure {
-    background-image: url("../images/photos/formal_profile.jpg");
-    filter: none;
-
-}
 
 section#welcome figcaption {
     color: var(--light-green);
@@ -65,23 +60,6 @@ section#directory .block-based-link {
     outline: 2px var(--dark-green) solid;
     margin-bottom: 10px;
     padding: 10px;
-}
-
-#coder-picture {
-
-    background-image: url("../images/photos/at_the_computer.jpg");
-    filter: none;
-}
-
-#musician-picture {
-
-    background-image: url("../images/photos/james_suit_with_bass.jpg");
-    background-position: top;
-}
-
-#person-picture {
-    background-image: url("../images/photos/tso_headshot.jpg");
-    background-position: top;
 }
 
 @media all and (min-width: 600px) {
@@ -140,9 +118,9 @@ section#directory .block-based-link {
     }
 
     section#welcome figure {
-        flex-basis: 250px;
+        flex-basis: 100px;
         flex-shrink: 0;
-        height: 250px;
+        height: 100px;
         padding: 0;
 
     }
