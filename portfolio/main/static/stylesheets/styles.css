@@ -73,7 +73,7 @@ a.text-based-link:hover {
     width: 100%;
     padding-top: 100%;
     outline: 1px solid var(--solid-black);
-    background-image: url("../resources/other icons/placeholder.png");
+    background-image: url("../images/other/placeholder.png");
     filter: brightness(75%);
     background-color: var(--light-black);
 }
@@ -92,7 +92,7 @@ a.text-based-link:hover {
     padding-top: 40px;
     height: 0;
     outline: none;
-    background-image: url("../resources/other icons/arrow.png");
+    background-image: url("../images/icons/arrow.png");
 }
 
 .page-contents {
@@ -108,7 +108,7 @@ a.text-based-link:hover {
     top: var(--horizantal-bar-width);
     min-height: calc(100vh - calc(2 * var(--horizantal-bar-width)));
     z-index: -2;
-    background-image: url("../resources/site-background.jpg");
+    background-image: url("../images/photos/site-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

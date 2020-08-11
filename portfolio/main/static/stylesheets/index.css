@@ -6,7 +6,7 @@
 main #mobile-only-banner {
     margin-top: 20px;
     padding-top: 33%;
-    background-image: url("../resources/home-page/logo.png");
+    background-image: url("../images/other/mobile_logo.png");
 }
 
 section#job-title {
@@ -31,7 +31,7 @@ section#job-title .horizontal-divider {
     }
 
 section#welcome figure {
-    background-image: url("../resources/home-page/welcome.jpg");
+    background-image: url("../images/photos/formal_profile.jpg");
     filter: none;
 
 }
@@ -69,18 +69,18 @@ section#directory .block-based-link {
 
 #coder-picture {
 
-    background-image: url("../resources/home-page/coder.jpg");
+    background-image: url("../images/photos/at_the_computer.jpg");
     filter: none;
 }
 
 #musician-picture {
 
-    background-image: url("../resources/about/about.jpg");
+    background-image: url("../images/photos/james_suit_with_bass.jpg");
     background-position: top;
 }
 
 #person-picture {
-    background-image: url("../resources/home-page/person.jpg");
+    background-image: url("../images/photos/tso_headshot.jpg");
     background-position: top;
 }
 
