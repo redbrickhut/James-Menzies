@@ -7,3 +7,7 @@
 venv/
 portfolio/portfolio/secrets.py
 portfolio/portfolio/__pycache__/
+__pycache__/
+main/__pycache__/
+main/contexts/__pycache__/
+main/migrations/__pycache__/

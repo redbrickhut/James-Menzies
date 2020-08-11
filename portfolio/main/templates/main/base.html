@@ -2,10 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    {% if title %}
+    <title>James Menzies: {{ title }}</title>
+    {% else %}
     <title>James Menzies: Coder</title>
+    {% endif %}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="{% static 'stylesheets/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/nav.css' %}">
+    {% block head %}
+    {% endblock %}
 
 </head>
 <body>
@@ -13,14 +22,17 @@
     <input type="checkbox" id="menu-trigger">
 
     <header class="horizontal-overlay">
-        <div id="menu-icon" class="icon image"></div>
-        <h2>Home</h2>
+        <div id="menu-icon" class="icon image" style="background-image:
+                url({% static 'images/icons/menu.png' %})"></div>
+        {% if title %}
+        <h2>{{ title }}</h2>
+        {%  endif %}
     </header>
 
     <div class="menu">
 
         {% for link in int_links %}
-            <a href="{{ link.url }}" class="menu-item">{{ link.title }}</a>
+            <a href="{% url link.url %}" class="menu-item">{{ link.title }}</a>
         {% endfor %}
 
     </div>
@@ -29,15 +41,24 @@
         <div class="flex-container">
 
             {% for link in ext_links %}
-             <a target="_blank" href="{{ link.url }}">
+             <a target="_blank" href="{{  link.url }}">
                  <div class="icon image"
                       style="background-image:
-                              url({% get_static_prefix %}images/icons/{{ link.img_url }})"></div>
+    url({% get_static_prefix %}images/icons/{{ link.icon_url }})"></div>
              </a>
             {% endfor %}
         </div>
     </footer>
 </nav>
+
+<div id="background-layer"></div>
+
+<div id="page-wrapper">
+    <main class="page-contents">
+        {% block contents %}
+        {% endblock %}
+    </main>
+</div>
 
 </body>
 </html>

@@ -2,9 +2,10 @@
 
 class ExternalLink:
 
-    def __init__(self, url, icon_url):
-        self.icon_url = icon_url
+    def __init__(self, icon_url, url):
         self.url = url
+        self.icon_url = icon_url
+
 
 class InternalLink:
 
@@ -14,6 +15,7 @@ class InternalLink:
 
 
 context = {
+    "menu_icon": "menu.png",
     "int_links": [
         InternalLink("Home", "index"),
         InternalLink("About Me", "about"),

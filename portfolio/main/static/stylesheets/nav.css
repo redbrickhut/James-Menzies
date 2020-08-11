@@ -234,24 +234,3 @@ nav .menu-item:hover + .menu-item {
     }
 }
 
-/*icon dump*/
-
-#menu-icon {
-    background-image: url("../resources/shell icons/menu.png");
-}
-
-#github-icon {
-    background-image: url("../resources/shell icons/github.png");
-}
-
-#email-icon {
-    background-image: url("../resources/shell icons/mail.png");
-}
-
-#linkedin-icon {
-    background-image: url("../resources/shell icons/linkedin.png");
-}
-
-#instagram-icon {
-    background-image: url("../resources/shell icons/instagram.png");
-}

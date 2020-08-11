@@ -108,7 +108,6 @@ a.text-based-link:hover {
     top: var(--horizantal-bar-width);
     min-height: calc(100vh - calc(2 * var(--horizantal-bar-width)));
     z-index: -2;
-    background-image: url("../images/photos/site-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
