@@ -6,3 +6,4 @@
 .idea/
 venv/
 portfolio/portfolio/secrets.py
+portfolio/portfolio/__pycache__/
