@@ -13,6 +13,11 @@ class InternalLink:
         self.title = title
         self.url = url
 
+class Image:
+
+    def __init__(self, url, caption):
+        self.url = url
+        self.caption = caption
 
 context = {
     "menu_icon": "menu.png",
