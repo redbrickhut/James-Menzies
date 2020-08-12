@@ -71,8 +71,18 @@ def media(request):
 
 
 def blog(request):
-    return HttpResponse("Blogs")
+
+    context = base_context
+    context['title'] = "Blogs"
+    context['blog_intro'] = blog_intro
+    context["posts"] = BlogPost.objects.all()
+    return render(request, 'main/blog.html', context)
 
 
 def blogposts(request, post_id):
-    return HttpResponse(f"You're attempting to look at post number {post_id}")
+
+    post = BlogPost.objects.get(pk=post_id)
+    context = base_context
+    context['title'] = post.title
+    context['post'] = post
+    return render(request, 'main/blogpost.html', context)

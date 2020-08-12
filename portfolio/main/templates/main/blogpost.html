@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'stylesheets/blog-post.css' %}">
+{% endblock %}
+
+{% block contents %}
+
+
+    <a href="{% url 'main:blog' %}" class="block-based-link back-button">
+        <div id="back-icon" class ="image icon"></div>
+        <span>BACK TO BLOGS</span>
+    </a>
+
+    <h1>{{ post.title }}</h1>
+    <section id="introduction">
+        <div class="details">
+            <span id="date">{{ post.pub_date }}</span>
+            <span id="author-name">{{ post.author.name }}</span>
+        </div>
+        <figure id="james-menzies" class="image"
+                style="background-image: url('{{ post.author.photo.url }}')"></figure>
+        <div class="snippet">
+            <div class="vertical-separator"></div>
+            <p>{{ post.snippet }}</p>
+        </div>
+    </section>
+    <p>{{ post.content }}</p>
+{% endblock contents %}

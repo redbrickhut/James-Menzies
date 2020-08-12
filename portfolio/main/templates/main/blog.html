@@ -9,7 +9,8 @@
     <section id="introduction">
         <p>{{ blog_intro }}</p>
         <figure id="blog-photo" aria-label="James pausing at the whiteboard
-        to take a sip of a delicious beverage" class="image"></figure>
+        to take a sip of a delicious beverage" class="image"
+        style="background-image: url({% static 'images/photos/whiteboard_with_beer.jpg' %})"></figure>
     </section>
 
     <section id="contents">
@@ -24,8 +25,10 @@
                 <span><strong class="key">Tags: </strong>
                 {{ post.get_tags_as_str }}</span>
             </div>
-            <p>{{ blog.snippet }}</p>
+            <p>{{ post.snippet }}</p>
             <div class="image arrow-button"></div>
+
+            </div>
         </a>
     {% endfor %}
     </section>

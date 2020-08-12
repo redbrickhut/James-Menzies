@@ -123,37 +123,3 @@ section.article-segment figcaption {
         flex-basis: 35%;
     }
 }
-
-/*author picture dump*/
-
-#james-menzies {
-    background-image: url("../images/photos/informal_profile.jpg");
-}
-
-/*article picture dump*/
-
-#end-in-mind1 {
-    background-image: url("../resources/blog-posts/end-in-mind.png");
-    background-position: left;
-
-}
-
-#css-tips1 {
-    background-image: url("../resources/blog-posts/css.png");
-
-}
-
-#playground1 {
-    background-image: url("../resources/blog-posts/catlady.jpeg");
-}
-
-#the-first-step1 {
-    background-image: url("../resources/blog-posts/leap-of-faith.jpg");
-
-}
-
-#website-reflection1 {
-    background-image: url("../resources/blog-posts/zen.jpeg");
-
-}
-
