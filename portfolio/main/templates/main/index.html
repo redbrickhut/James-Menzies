@@ -6,7 +6,8 @@
 {% endblock head %}
 
 {% block contents %}
-    <div id="mobile-only-banner" class="image"></div>
+    <div id="mobile-only-banner" class="image"
+    style="background-image: url({% static 'images/other/site-background.jpg' %})"></div>
 
     <section id="job-title">
         <span>BACK-END DEVELOPER</span>
@@ -26,12 +27,13 @@
     <section id="directory">
 
         {% for directory in directories %}
-            <a href="{% url directory.url %}">
+            <a href="{% url directory.url %}"
+            class="block-based-link">
                 <h3>{{ directory.title }}</h3>
                 <figure aria-label="{{ directory.image.caption  }}"
                         class="image" style="background-image:
                         url({% get_static_prefix %}images/photos/{{ directory.image.url }})"></figure>
-                <figcaption>{{ directory.description }}</figcaption>
+                <figcaption>{{ directory.prompt }}</figcaption>
             </a>
         {% endfor %}
     </section>
