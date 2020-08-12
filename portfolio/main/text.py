@@ -17,11 +17,22 @@ If you want some greater context about my life as a professional musician,
 check this out.
 """
 
-biography = """
+biography = [
+"""
+ladflaskjdflsjdflkjs
+""",
+"""
+fa;flsjd;faksjdf;laskjdf;a
+"""
+]
+
+sales_pitch = r"""
 
 """
 
-sales_pitch = """
-
+blog_intro = r"""
+When I'm working on a project, I find it is often helpful to document solutions as I
+stumble across them. Other times I just like to think out loud. Here are those thoughts...
+I hope there's something here that helps you out too. If not, I promise to make the
+diversion entertaining.
 """
-

@@ -39,8 +39,28 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("About Page")
+    context = base_context
+    context['title'] = "About"
+    context['details'] = {
+        "Name": "James Menzies",
+        "Phone": "0432 801 574",
+        "Email": "james.r.menzies@gmail.com",
+        "Location": "Hobart, Tasmania, Australia",
+    }
+    context["skills"] = [
+        "Python",
+        "Java",
+        "JavaFX",
+        "Hibernate",
+        "Git",
+        "Github",
+        "HTML",
+        "CSS",
+    ]
+    context["sales_pitch"] = sales_pitch
+    context["biography"] = biography
 
+    return render(request, 'main/about.html', context)
 
 def projects(request):
     return HttpResponse("My Projects")
@@ -52,3 +72,7 @@ def media(request):
 
 def blog(request):
     return HttpResponse("Blogs")
+
+
+def blogposts(request, post_id):
+    return HttpResponse(f"You're attempting to look at post number {post_id}")

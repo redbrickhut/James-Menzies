@@ -1,6 +1,19 @@
 from django.db import models
 
 
+class Author(models.Model):
+    pass
+
+
+
+class BlogPost(models.Model):
+    title = models.CharField(max_length=100)
+    snippet = models.TextField()
+    author = models.ForeignKey(Author)
+    content = models.TextField()
+
+
+
 class ExternalLink:
 
     def __init__(self, icon_url, url):

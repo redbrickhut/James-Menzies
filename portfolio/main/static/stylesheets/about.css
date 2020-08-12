@@ -21,7 +21,6 @@ section#introduction {
 
 section#introduction figure {
 
-    background-image: url("../images/photos/james_suit_with_bass.jpg");
     background-position: top;
     flex-basis: 100%;
 }

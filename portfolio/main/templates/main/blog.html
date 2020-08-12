@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'stylesheets/blog.css' %}">
+{% endblock head %}
+
+{% block contents %}
+     <h1>Blog</h1>
+    <section id="introduction">
+        <p>{{ blog_intro }}</p>
+        <figure id="blog-photo" aria-label="James pausing at the whiteboard
+        to take a sip of a delicious beverage" class="image"></figure>
+    </section>
+
+    <section id="contents">
+
+    {% for post in posts %}
+
+        <a href="{% url 'blogposts' post.id %}" class="post block-based-link">
+            <div class="details">
+                <h2>{{ post.title }}</h2>
+                <span><strong class="key">Date: </strong>{{ post.pub_date }}</span>
+                <span><strong class="key">Author: </strong>{{ post.author.name }}</span>
+                <span><strong class="key">Tags: </strong>
+                {{ post.get_tags_as_str }}</span>
+            </div>
+            <p>{{ blog.snippet }}</p>
+            <div class="image arrow-button"></div>
+        </a>
+    {% endfor %}
+    </section>
+
+{% endblock contents %}
