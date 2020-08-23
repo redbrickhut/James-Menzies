@@ -237,21 +237,21 @@ nav .menu-item:hover + .menu-item {
 /*icon dump*/
 
 #menu-icon {
-    background-image: url("../resources/shell icons/menu.png");
+    background-image: url("/assets/images/icons/menu.png");
 }
 
 #github-icon {
-    background-image: url("../resources/shell icons/github.png");
+    background-image: url("/assets/images/icons/github.png");
 }
 
 #email-icon {
-    background-image: url("../resources/shell icons/mail.png");
+    background-image: url("/assets/images/icons/mail.png");
 }
 
 #linkedin-icon {
-    background-image: url("../resources/shell icons/linkedin.png");
+    background-image: url("/assets/images/icons/linkedin.png");
 }
 
 #instagram-icon {
-    background-image: url("../resources/shell icons/instagram.png");
+    background-image: url("/assets/images/icons/instagram.png");
 }

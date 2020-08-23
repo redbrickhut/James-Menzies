@@ -21,7 +21,7 @@ section#introduction {
 
 section#introduction figure {
 
-    background-image: url("../resources/about/about.jpg");
+    background-image: url("/assets/images/photos/about.jpg");
     background-position: top;
     flex-basis: 100%;
 }
