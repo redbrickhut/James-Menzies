@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>James Menzies: Coder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style-sheets/styles.css"
+          integrity="sha384-alRgYttmoVkoS7QB/Ys32dllVWFZR8lHviLhpOcr9IuuKFYiw8mXZqvOy0Fs+Nsj"/>
+    <link rel="stylesheet" href="../style-sheets/nav.css"
+          integrity="sha384-736ZBj697MQrhGgkio/Hk2N9nbt0up/oOqKZ2ZG68N/zgOEx5K5LyIH9FtrAk8yW"/>
+    <link rel="stylesheet" href="../style-sheets/projects.css"
+          integrity="sha384-Rczfk4UfO/QW0ZeKUKjtnFUc75FZ2AsQaWcX1A5Jx/5xl5XFMCnLbeN0lSxDS7ns"/>
+</head>
+
+<body>
+<nav>
+    <input type="checkbox" id="menu-trigger">
+
+    <header class="horizontal-overlay">
+        <div id="menu-icon" class="icon image"></div>
+        <h2>Projects</h2>
+    </header>
+
+    <div class="menu">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="about.html" class="menu-item">About Me</a>
+        <a href="projects.html" class="menu-item">My Projects</a>
+        <a href="media.html" class="menu-item">Media</a>
+        <a href="blog.html" class="menu-item">Blog</a>
+    </div>
+
+    <footer class="horizontal-overlay">
+        <div class="flex-container">
+            <a target="_blank" href="mailto:james.r.menzies@gmail.com">
+                <div id = "email-icon" class="icon image"></div>
+            </a>
+            <a target="_blank" href="https://github.com/redbrickhut">
+                <div id = "github-icon" class="icon image"></div>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/redbrickhut/">
+                <div id = "instagram-icon" class="icon image"></div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/james-menzies-24ab3a184/">
+                <div id = "linkedin-icon" class="icon image"></div>
+            </a>
+        </div>
+    </footer>
+</nav>
+
+<main id="background-layer"></main>
+
+<main class="page-contents">
+    <h1>My Projects</h1>
+
+    <section id="introduction">
+        <div class="project-text">
+            <p>
+                If you're a musician that is in need of a technical solution that requires an
+                in-depth knowledge of the field I would love to hear from you! Check out the
+                "ABOUT ME" section to get in touch.
+            </p>
+            <p>
+                In any case I hope you enjoy browsing my collection.
+            </p>
+
+            <div id="github-link">
+                <div class="vertical-separator"></div>
+                <span>
+                    If you want to go straight to my GitHub repository,
+                    <a class="text-based-link" target="_blank" href="https://github.com/redbrickhut">
+                        click here.
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <figure class="image" id="introduction-photo"
+                aria-label="A snippet of some code."></figure>
+    </section>
+
+    <article class="project">
+        <h2>Sound Library Batch Downloader</h2>
+
+        <div class="flex-container">
+            <aside>
+                <figure class="image" aria-label="A screenshot featuring many files being downloaded" id="SLBD1">
+
+                </figure>
+            </aside>
+            <div class="project-text">
+                <h3 class="language">Written in: Java, JavaFX</h3>
+                <h3 class="version">Version 1.0</h3>
+                <p>I wrote this utility for a friend in order to help
+                    streamline the process of downloading the BBC sound effect archive which contained
+                    in excess of 16000 files. The program stores information about the download in
+                    between sessions, and will organize them into a nested folder structure. It also utilizes
+                    the JAudioTagger library to tag the files so that they are convenient to search through
+                    in various music players. I hope to add more libraries as well as more user
+                    customization in a future version.
+                </p>
+
+                <a class="project-link block-based-link" target="_blank"
+                   href="https://github.com/redbrickhut/BBCSoundsBatchDownload">
+                    <div class="vertical-separator"></div>
+                    <span class="link-message"></span>
+                    <div class="image arrow-button"></div>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <article class="project">
+        <h2>FX Auto-Complete Text Field</h2>
+        <div class="flex-container">
+            <aside>
+                <figure class="image" id="AutoComplete1"
+                        aria-label="A small demonstration of the auto-complete input."></figure>
+
+            </aside>
+            <div class="project-text">
+                <h3 class="language">Written in: Java, JavaFX</h3>
+                <h3 class="version">Version 1.0</h3>
+                <p>A simple control that I wrote to allow a user to select an
+                    object from a predefined list by inputting text. This control also uses autocomplete
+                    with camel-casing for speedy input for the end user. This control extends the TextField
+                    class, and has the additional property "selectedObject" for internal retrieval. A demo
+                    showcasing all of this is included in the repo.
+                </p>
+
+                <a class="project-link block-based-link" target="_blank"
+                   href="https://github.com/redbrickhut/AutoCompleteTextField">
+                    <div class="vertical-separator"></div>
+                    <span class="link-message"></span>
+                    <div class="image arrow-button"></div>
+                </a>
+            </div>
+        </div>
+    </article>
+</main>
+</body>
+</html>

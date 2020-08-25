@@ -51,9 +51,19 @@ defaults:
     values:
       layout: "default_layout"
       nav: true
+  -
+    scope:
+      path: ""
+      type: "wikis"
+    values:
+      surrounds: "wiki_page.html"
+      layout: "default_layout"
+      nav: true
 
 collections:
   projects:
     output: true
   media:
+    output: true
+  wikis:
     output: true

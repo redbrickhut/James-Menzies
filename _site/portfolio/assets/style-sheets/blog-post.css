@@ -1,0 +1,159 @@
+main.page-contents .back-button {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+main.page-contents .back-button #back-icon {
+    background-image: url("../resources/other icons/back-arrow.png");
+    width: 40px;
+    padding-top: 40px;
+    outline: none;
+    background-color: transparent;
+}
+
+main.page-contents .back-button span {
+    margin-left: 20px;
+}
+
+section#introduction {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    align-items: flex-end;
+}
+
+section#introduction figure {
+    flex-basis: 30%;
+    padding-top: 30%;
+    margin-left: 20px;
+}
+
+section#introduction .details {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+section#introduction #author-name {
+    font-size: 20px;
+}
+
+section#introduction #date {
+    font-size: 14px;
+}
+
+section#introduction .snippet {
+    margin-top: 20px;
+    flex-basis: 90%;
+    display: flex;
+    color: var(--light-green);
+
+}
+
+section#introduction .snippet .vertical-separator {
+    width: 8px;
+
+}
+
+section.article-segment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.article-segment .article-text {
+    flex-basis: 100%;
+}
+section.article-segment aside {
+    flex-basis:  70%;
+    text-align: center;
+    margin: auto;
+}
+
+section.article-segment figcaption {
+    color: var(--light-green);
+}
+
+@media all and (min-width: 600px) {
+
+    section#introduction {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    section#introduction #author-name {
+        font-size: 24px;
+    }
+
+    section#introduction figure {
+        padding: 0;
+        flex-basis: 150px;
+        height: 150px;
+        margin-right: 20px;
+
+    }
+
+    section#introduction .snippet {
+        flex-basis: 40%;
+        margin: 0;
+    }
+
+    section#introduction .details {
+        flex-basis: auto;
+        flex-shrink: 0;
+    }
+
+    section.article-segment {
+        flex-wrap: nowrap;
+        margin: 40px 0;
+    }
+
+    .article-segment:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    section.article-segment .article-text {
+        flex-basis: 60%;
+    }
+
+    section.article-segment aside {
+        flex-basis: 35%;
+    }
+}
+
+/*author picture dump*/
+
+#james-menzies {
+    background-image: url("../resources/home-page/james.jpg");
+}
+
+/*article picture dump*/
+
+#end-in-mind1 {
+    background-image: url("../resources/blog-posts/end-in-mind.png");
+    background-position: left;
+
+}
+
+#css-tips1 {
+    background-image: url("../resources/blog-posts/css.png");
+
+}
+
+#playground1 {
+    background-image: url("../resources/blog-posts/catlady.jpeg");
+}
+
+#the-first-step1 {
+    background-image: url("../resources/blog-posts/leap-of-faith.jpg");
+
+}
+
+#website-reflection1 {
+    background-image: url("../resources/blog-posts/zen.jpeg");
+
+}
+
