@@ -30,19 +30,22 @@
                 <h3 class="language">Written in: {{ project.tags | array_to_sentence_string }}</h3>
                 <h3 class="version">Version {{ project.version }}</h3>
                 <p>{{ project.content }}</p>
-
-                <a class="project-link block-based-link" target="_blank"
-                href={{ project.github }}>
-                    <div class="vertical-separator"></div>
-                    <span class="link-message">Programmers - </span>
-                    <div class="image arrow-button"></div>
-                </a>
-                <a class="project-link block-based-link" target="_blank"
-                href='/wikis/{{ project.title }}/home'>
-                    <div class="vertical-separator"></div>
-                    <span class="link-message">Musos - </span>
-                    <div class="image arrow-button"></div>
-                </a>
+                
+                <div class="project-link-container">
+                    {% if project.wiki %}
+                    <a class="project-link block-based-link" 
+                    href='/wikis/{{ project.title }}/home'>
+                        <div class="vertical-separator"></div>
+                        <span class="link-message">More Info </span>
+                    </a>
+                    {% endif %}
+                    <a class="project-link block-based-link" target="_blank"
+                    href={{ project.github }}>
+                        <div class="vertical-separator"></div>
+                        <span class="link-message">Source Code</span>
+                    </a>
+                   
+                </div>
             </div>
         </div>
     </article>

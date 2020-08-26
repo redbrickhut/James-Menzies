@@ -58,6 +58,8 @@ defaults:
     values:
       surrounds: "wiki_page.html"
       layout: "default_layout"
+      styles:
+        - "wiki_page.css"
       nav: true
 
 collections:

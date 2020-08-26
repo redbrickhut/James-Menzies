@@ -4,8 +4,8 @@ layout: nil
 {% for project in site.projects %}
 -
 name: {{ project.title }}
-sidebar:
-{%- for page in project.sidebar %}
+wiki:
+{%- for page in project.wiki %}
   - page: {{ page.page}}
     url: /projects/{{ project.title }}/{{ page.url }}
 {%- endfor -%}

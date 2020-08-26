@@ -1,5 +1,6 @@
 ---
-title: Sound FX Library Download Utility
+title: FXLibraryUtility
+name: Sound FX Library Download Utility
 github: https://github.com/redbrickhut/BBCSoundsBatchDownload
 tags:
     - Java

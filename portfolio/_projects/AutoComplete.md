@@ -6,11 +6,12 @@ tags:
     - Java
     - JavaFX
 version: 1.0
-sidebar:
+wiki:
   - page: Home Page
     url: home
   - page: How To Install
     url: install
+  - category: How Tos
   - page: Tutorial
     url: tutorial
 screenshots:

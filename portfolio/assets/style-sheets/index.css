@@ -140,9 +140,9 @@ section#directory .block-based-link {
     }
 
     section#welcome figure {
-        flex-basis: 250px;
+        flex-basis: 100px;
         flex-shrink: 0;
-        height: 250px;
+        height: 100px;
         padding: 0;
 
     }

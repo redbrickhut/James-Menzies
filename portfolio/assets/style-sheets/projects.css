@@ -34,13 +34,15 @@ article.project .project-text h3 {
 }
 
 article.project .project-link {
-    width: 90%;
-    margin: auto;
+    margin: 0px, 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 15px;
     outline: var(--light-green) solid 1px;
+    flex-basis: 45%;
+    
+    
 }
 
 article.project .vertical-separator {
@@ -51,12 +53,14 @@ article.project .project-link span {
     font-size: 20px;
 }
 
-article.project .project-link span::after {
-    content: "Click here to check out this project"
+article.project  .project-link .arrow-button {
+    background-color: transparent;
 }
 
-article.project .project-link .arrow-button {
-    background-color: transparent;
+article.project .project-link-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 

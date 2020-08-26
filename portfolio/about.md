@@ -8,7 +8,7 @@ styles:
 <div id="resume">
     <div class="vertical-separator"></div>
     <span>If you would like to download the full resume, click
-        <a class="text-based-link" href="../resources/resume.pdf">
+        <a class="text-based-link" href="/assets/docs/resume.pdf">
             HERE.
         </a>
     </span>

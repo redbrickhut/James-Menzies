@@ -1,6 +1,8 @@
 ---
 project: AutoComplete
+title: JavaFx Autocomplete
 ---
 
-# Auto Complete Bonanza Orgazmo
-This is the home page for AC!
+# JavaFx AutoComplete Control
+
+This is the home page for the AutoComplete project

@@ -1,5 +1,6 @@
 ---
-title: String Section Rostering Utility
+title: StringRoster
+name: String Section Rostering Utility
 github: https://github.com/redbrickhut/StringSectionRosteringUtility
 tags:
     - Python
