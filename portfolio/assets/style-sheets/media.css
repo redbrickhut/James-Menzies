@@ -65,7 +65,8 @@ section#videos iframe {
 
     section h2 {
 
-        text-align: left;
+        display: inline-block;
+        margin-left: calc((100% - 560px) / 2);
     }
 
     section#photos .image {
@@ -78,7 +79,6 @@ section#videos iframe {
     section#videos figure {
 
         width: 560px;
-        margin: 0;
     }
 
     section#videos iframe {
@@ -86,11 +86,4 @@ section#videos iframe {
         height: 315px;
         width: 560px;
     }
-}
-
-/*photo gallery dump*/
-
-#photo-1 {
-
-    background-image: url("../resources/home-page/james.jpg");
 }

@@ -59,13 +59,24 @@ defaults:
       surrounds: "wiki_page.html"
       layout: "default_layout"
       styles:
-        - "wiki_page.css"
+        - "wiki-page.css"
       nav: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default_layout"
+      nav: true
+      surrounds: "post.html"
+      styles:
+        - "blog-post.css"
 
 collections:
   projects:
     output: true
-  media:
-    output: true
   wikis:
     output: true
+  media_links:
+    output: true
+    sort_by: date_posted

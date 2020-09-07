@@ -6,14 +6,7 @@ tags:
     - Java
     - JavaFX
 version: 1.0
-wiki:
-  - page: Home Page
-    url: home
-  - page: How To Install
-    url: install
-  - category: How Tos
-  - page: Tutorial
-    url: tutorial
+
 screenshots:
   - url: autocomplete.png
     caption: A small demonstration of the auto-complete input.

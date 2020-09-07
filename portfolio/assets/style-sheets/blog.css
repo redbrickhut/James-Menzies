@@ -11,7 +11,7 @@ section#introduction figure {
 }
 
 section#introduction #blog-photo {
-    background-image: url("../resources/blog.jpg");
+    background-image: url("/assets/images/photos/blog.jpg");
 }
 
 section#contents .post .arrow-button {
