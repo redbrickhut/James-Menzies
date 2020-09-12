@@ -1,0 +1,54 @@
+<h1>{{ page.title }}</h1>
+<section id="introduction">
+    <div class="project-text">
+        {{ content }}
+
+        <div id="github-link">
+            <div class="vertical-separator"></div>
+            <span>
+                If you want to go straight to my GitHub repository,
+                <a class="text-based-link" target="_blank" href="https://github.com/redbrickhut">
+                    click here.
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <figure class="image" id="introduction-photo"
+            aria-label="A snippet of some code."></figure>
+
+
+</section>
+{% for project in site.projects %}
+    <article class="project">
+        <h2>{{ project.name }}</h2>
+        <div class="flex-container">
+            <aside>
+                <figure class="image" label={{ project.screenshots[0].caption }}
+                style="background-image: url(/assets/projects/{{ project.screenshots[0].url }})"></figure>
+
+            </aside>
+            <div class="project-text">
+                <h3 class="language">Written in: {{ project.tags | array_to_sentence_string }}</h3>
+                <h3 class="version">Version {{ project.version }}</h3>
+                <p>{{ project.content }}</p>
+                
+                <div class="project-link-container">
+                    {% if project.wiki %}
+                    <a class="project-link block-based-link" 
+                    href='/wikis/{{ project.title }}/home'>
+                        <div class="vertical-separator"></div>
+                        <span class="link-message">More Info </span>
+                    </a>
+                    {% endif %}
+                    <a class="project-link block-based-link" target="_blank"
+                    href={{ project.github }}>
+                        <div class="vertical-separator"></div>
+                        <span class="link-message">Source Code</span>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </article>
+{% endfor %}

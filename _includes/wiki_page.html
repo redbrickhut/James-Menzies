@@ -1,0 +1,24 @@
+{% assign current_project =  site.projects | where: 'title',  {{page.project}} | first %}
+
+<div class="sidebar">
+    <h3>Pages</h3>
+    <ul>
+        {% for item in current_project.wiki %}
+            {% if item.category %}
+                </ul>
+                <h3>{{ item.category }}</h3>
+                <ul>
+            {% else %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.page }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+
+
+{{ content }}

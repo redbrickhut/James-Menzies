@@ -1,0 +1,257 @@
+
+nav .icon {
+
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+nav #menu-trigger {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    z-index: 3;
+    opacity: 0%;
+}
+
+nav .horizontal-overlay {
+
+    position: fixed;
+    height: var(--horizantal-bar-width);
+    width: 100%;
+    background-color: var(--light-black);
+    z-index: 2;
+}
+
+nav header.horizontal-overlay {
+
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--solid-black) 2px solid;
+}
+
+nav header.horizontal-overlay h2 {
+
+    padding-right: 20px;
+    text-transform: lowercase;
+    color: var(--light-green);
+}
+
+nav footer.horizontal-overlay {
+    bottom: 0;
+    border-top: var(--solid-black) 2px solid;
+}
+
+nav footer.horizontal-overlay .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    width: 70%;
+    min-width: 285px;
+    max-width: 340px;
+    height: 100%;
+    margin: auto;
+}
+
+nav .menu {
+
+    position: fixed;
+    display: none;
+    overflow: hidden;
+    top: var(--horizantal-bar-width);
+    background-color: var(--medium-black);
+    width: 100%;
+    z-index: 1;
+}
+
+nav .menu-item {
+
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0;
+    background-color: var(--medium-black);
+    border-bottom: solid 1px var(--solid-black);
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+nav .menu-item:hover {
+
+    padding: 30px 0;
+    background-color: var(--background-color);
+    color: var(--light-green);
+}
+
+nav #menu-trigger:checked ~ header #menu-icon {
+
+    transform: rotate(90deg);
+}
+
+nav #menu-trigger:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    animation: stretch 0.5s;
+}
+
+nav #menu-trigger:checked ~ .menu .menu-item {
+    display: block;
+    animation: delayed-appearance 1s;
+}
+
+nav .menu-item:hover {
+
+    border: solid 1px var(--solid-black);
+}
+
+nav .menu-item:hover + .menu-item {
+
+    border-top: solid 1px var(--solid-black);
+}
+
+
+
+@media all and (min-width: 600px){
+
+    nav .menu {
+        width: 0;
+    }
+
+    nav #menu-trigger:checked ~ .menu {
+        justify-content: flex-start;
+        animation: widen 0.5s;
+        width: var(--sidebar-width);
+        height: 100vh;
+        overflow: visible;
+        border-right: solid 2px var(--solid-black);
+
+    }
+
+    nav .menu-item:hover {
+
+        width: 110%;
+    }
+}
+
+@media all and (min-width: 950px) {
+
+    nav #menu-icon {
+        visibility: hidden;
+    }
+
+    nav #menu-trigger {
+        display: none;
+    }
+
+    nav .menu {
+        position: fixed;
+        top: var(--horizantal-bar-width);
+        height: 100vh;
+        width: var(--sidebar-width);
+        display: block;
+        overflow: visible;
+        border-right: 2px solid var(--solid-black);
+        background-color: var(--light-black);
+    }
+
+    nav .menu-item {
+        display: block;
+        color: var(--solid-black);
+        background-color: var(--light-black);
+
+    }
+
+    nav footer.horizontal-overlay .flex-container {
+        margin-left: 30px;
+    }
+
+    nav .horizontal-overlay {
+        background-color: var(--medium-black);
+    }
+
+}
+
+/*animation dump*/
+
+@keyframes widen {
+
+    0% {
+        width: 0%;
+        background-color: var(--light-black);
+    }
+
+    50% {
+        background-color: var(--light-black);
+    }
+
+    100% {
+        width: var(--sidebar-width);
+        background-color: var(--medium-black);
+    }
+}
+
+@keyframes stretch {
+
+    0% {
+        max-height: 0;
+        background-color: var(--light-black);
+    }
+
+    50% {
+        background-color: var(--light-black);
+    }
+
+    100% {
+        max-height: 500px;
+        background-color: var(--medium-black);
+    }
+}
+
+@keyframes delayed-appearance {
+
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*icon dump*/
+
+#menu-icon {
+    background-image: url("/assets/images/icons/menu.png");
+}
+
+#github-icon {
+    background-image: url("/assets/images/icons/github.png");
+}
+
+#email-icon {
+    background-image: url("/assets/images/icons/mail.png");
+}
+
+#linkedin-icon {
+    background-image: url("/assets/images/icons/linkedin.png");
+}
+
+#instagram-icon {
+    background-image: url("/assets/images/icons/instagram.png");
+}
