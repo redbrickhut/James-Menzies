@@ -1,0 +1,21 @@
+person:
+  title: The Person
+  id: person-picture
+  image_description: James smiling in a tails suit
+  prompt: If you're after contact details, my qualificaitons, and my life story, this is the place for you.
+  url: /about
+
+coder:
+  title: The Coder
+  id: coder-picture
+  image_description: James at the computer, working on some code
+  prompt: If you want to dive in and have a look at the stuff I've sorked on, click here.
+  url: /projects
+  
+musician:
+  title: The Musician
+  id: musician-picture
+  image_description: James playing the double bass in a suit.
+  prompt: If you want some greater context about my life as a musician,check this out.
+  url: /media
+  
