@@ -1,0 +1,26 @@
+<nav>
+    <input type="checkbox" id="menu-trigger">
+
+    <header class="horizontal-overlay">
+        <div id="menu-icon" class="icon image"></div>
+        <h2>{{ page.title }}</h2>
+    </header>
+
+    <div class="menu">
+
+        {% for link in site.data.internal_links %}
+        <a href="{{ link.url }}" class="menu-item">{{ link.name }}</a>
+        {% endfor %}
+    </div>
+
+    <footer class="horizontal-overlay">
+        <div class="flex-container">
+
+            {% for link in site.data.external_links %}
+            <a target="_blank" href="{{ link.url }}">
+                <div class="icon image" style="background-image: url(/assets/images/icons/{{ link.icon }})"></div>
+            </a>
+            {% endfor %}
+        </div>
+    </footer>
+</nav>

@@ -1,0 +1,17 @@
+# store items in /assets/images/icons/
+-
+  name: github
+  icon:  github.png
+  url: https://www.github.com/redbrickhut
+-
+  name: email
+  icon: mail.png
+  url: mailto:james.r.menzies@gmail.com
+-
+  name: linkedin
+  icon: linkedin.png
+  url: https://www.linkedin.com/in/james-menzies-24ab3a184/
+-
+  name: instagram
+  icon: instagram.png
+  url: https://www.instagram.com/redbrickhut/

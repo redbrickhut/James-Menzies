@@ -11,7 +11,10 @@ screenshots:
     caption: A screenshot featuring many files being downloaded
 wiki:
   - page: About
-  - url: home
+    url: home
+  - category: Tutorials
+  - page: Tutorial
+    url: tutorial
 ---
 
 I wrote this utility for a friend in order to help streamline the process of downloading the BBC sound effect archive which contained in excess of 16000 files. The program stores information about the download in between sessions, and will organize them into a nested folder structure. It also utilizes the JAudioTagger library to tag the files so that they are convenient to search through in various music players. I hope to add more libraries as well as more user customization in a future version.

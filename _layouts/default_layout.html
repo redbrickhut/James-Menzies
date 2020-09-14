@@ -11,44 +11,10 @@
     {% for style in page.styles %}
     <link rel="stylesheet" href="/assets/style-sheets/{{ style }}">
     {% endfor %}
-
-
 </head>
 <body>
 {% if page.nav %}
-    <nav>
-        <input type="checkbox" id="menu-trigger">
-
-        <header class="horizontal-overlay">
-            <div id="menu-icon" class="icon image"></div>
-            <h2>{{ page.title }}</h2>
-        </header>
-
-        <div class="menu">
-            <a href="/" class="menu-item">Home</a>
-            <a href="/about" class="menu-item">About Me</a>
-            <a href="/projects" class="menu-item">My Projects</a>
-            <a href="/media" class="menu-item">Media</a>
-            <a href="/blog" class="menu-item">Blog</a>
-        </div>
-
-        <footer class="horizontal-overlay">
-            <div class="flex-container">
-                <a target="_blank" href="mailto:james.r.menzies@gmail.com">
-                    <div id = "email-icon" class="icon image"></div>
-                </a>
-                <a target="_blank" href="https://github.com/redbrickhut">
-                    <div id = "github-icon" class="icon image"></div>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/redbrickhut/">
-                    <div id = "instagram-icon" class="icon image"></div>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/james-menzies-24ab3a184/">
-                    <div id = "linkedin-icon" class="icon image"></div>
-                </a>
-            </div>
-        </footer>
-    </nav>
+    {% include nav.html %}  
 {% endif %}
 
 <div id="background-layer"></div>

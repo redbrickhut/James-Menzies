@@ -24,9 +24,7 @@ pagination:
       <span class="author"><strong class="key">Author: </strong>{{ author.name }}</span>
       <span class="tags"><strong class="key">Tags: </strong> {{ post.tags | join: ', ' }}</span>
   </div>
-  <p>
-  This is the excerpt of the blog post.
-  </p>
+  <p>{{ post.blurb }}</p>
   <div class="image arrow-button"></div>
 </a>
 {% endfor %}
