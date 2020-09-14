@@ -22,10 +22,10 @@ page_wrapper: true
 
 <section id="directory">
     {% for directory in site.data.directories %}
-    <a href={{ directory.url }} aria-label={{ directory.image_description }}
+    <a href="{{ directory.url }}" aria-label="{{ directory.image_description }}"
         class="directory-wrapper block-based-link">
         <h3>{{ directory.title }}</h3>
-        <figure class="image" id={{ directory.id }}></figure>
+        <figure class="image" id="{{ directory.id }}"></figure>
         <figcaption>{{ directory.prompt }}</figcaption>
         </a>
     {% endfor %}

@@ -67,6 +67,24 @@ section#directory .block-based-link {
     padding: 10px;
 }
 
+#coder-picture {
+
+    background-image: url("/assets/images/photos/coder.jpg");
+    filter: none;
+}
+
+#musician-picture {
+
+    background-image: url("/assets/images/photos/about.jpg");
+    background-position: top;
+}
+
+#person-picture {
+    background-image: url("/assets/images/photos/person.jpg");
+    background-position: top;
+}
+
+
 
 
 @media all and (min-width: 600px) {
