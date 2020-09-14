@@ -34,13 +34,14 @@ article.project .project-text h3 {
 }
 
 article.project .project-link {
-    margin: 0px, 30px;
+    margin: 0 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px;
     outline: var(--light-green) solid 1px;
-    flex-basis: 45%;
+    flex-basis: 40%;
+    flex-grow: 0;
     
     
 }
@@ -62,6 +63,7 @@ article.project .project-link-container {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 
 
 @media all and (min-width: 600px){
