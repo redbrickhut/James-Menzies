@@ -31,9 +31,6 @@ pagination:
     <div class="image arrow-button"></div>
     </a>
 {% endfor %}
-{% else %}
-<p>There currently are no posts, come back soon!</p>
-{% endif %}
 </section>
 
 <div class="paginate-container">
@@ -47,3 +44,6 @@ pagination:
    <a href="{{ paginator.next_page_path }}" class="page-button block-based-link">Next</a>
   {% endif %}
 </div>
+{% else %}
+<span id="no-posts">There currently are no posts, come back soon!</span>
+{% endif %}
