@@ -32,6 +32,10 @@ section#contents .post {
     padding: 15px 0;
 }
 
+section#contents .post:last-child {
+    border-bottom: var(--solid-black) solid 1px;
+}
+
 section#contents .post .details {
     display: flex;
     flex-direction: column;
@@ -64,13 +68,13 @@ section#contents .post .details span strong {
     display: flex;
     flex-wrap: nowrap;
     max-width: 250px;
-    margin: 70px auto
+    margin: 40px auto 70px auto;
 }
 
 .paginate-container * {
     border: 2px solid var(--light-green);
     font-size: 24px;
-    padding: 5px 10px;
+    padding: 0 10px;
     text-align: center;
     text-transform: uppercase;
     margin: 0 5px;
@@ -86,6 +90,10 @@ section#contents .post .details span strong {
     flex-grow: 2;
     flex-shrink: 1;
     padding: inherit 20px
+}
+
+.paginate-container .page-button.disabled {
+    visibility: hidden;
 }
 
 

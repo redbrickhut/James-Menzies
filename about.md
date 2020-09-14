@@ -14,7 +14,6 @@ styles:
     </span>
 </div>
 
-
 <section id="introduction">
 <figure aria-label="James playing the bass in a suit" class="image"></figure>
 <ul id="key-details">
@@ -36,7 +35,6 @@ styles:
             <li>{{ skill }}</li>
             {% endfor %}
         </ul>
-
     </div>
 </section>
 

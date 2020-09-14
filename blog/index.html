@@ -13,36 +13,40 @@ pagination:
     to take a sip of a delicious beverage" class="image"></figure>
 </section>
 
-
 <section id="contents">
 {% if paginator.posts %}
 {% for post in paginator.posts %}
 {% assign author = site.data.authors[post.author] %}
 <a href="{{ post.url }}" class="post block-based-link">
-    <div class="details">
-        <h2>{{ post.title }}</h2>
-        <span class="publish-date"><strong class="key">Date: </strong>{{ post.date | date: "%d/%m/%Y" }}</span>
-        <span class="author"><strong class="key">Author: </strong>{{ author.name }}</span>
-        <span class="tags"><strong class="key">Tags: </strong> {{ post.tags | join: ', ' }}</span>
-    </div>
-    <p>
-    This is the excerpt of the blog post.
-    </p>
-    <div class="image arrow-button"></div>
-    </a>
+  <div class="details">
+      <h2>{{ post.title }}</h2>
+      <span class="publish-date"><strong class="key">Date: </strong>{{ post.date | date: "%d/%m/%Y" }}</span>
+      <span class="author"><strong class="key">Author: </strong>{{ author.name }}</span>
+      <span class="tags"><strong class="key">Tags: </strong> {{ post.tags | join: ', ' }}</span>
+  </div>
+  <p>
+  This is the excerpt of the blog post.
+  </p>
+  <div class="image arrow-button"></div>
+</a>
 {% endfor %}
 </section>
 
 <div class="paginate-container">
   {% if paginator.previous_page %}
    <a href="{{ paginator.previous_page_path }}" class="page-button block-based-link">Prev</a>
+  {% else %}
+  <a href="#" class="page-button disabled block-based-link">Next</a>
   {% endif %}
 
   <div class="current-page">{{ paginator.page }}</div>
 
   {% if paginator.next_page %}
    <a href="{{ paginator.next_page_path }}" class="page-button block-based-link">Next</a>
+  {% else %}
+  <a href="#" class="page-button disabled block-based-link">Next</a>
   {% endif %}
+
 </div>
 {% else %}
 <span id="no-posts">There currently are no posts, come back soon!</span>

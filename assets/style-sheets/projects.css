@@ -42,8 +42,6 @@ article.project .project-link {
     outline: var(--light-green) solid 1px;
     flex-basis: 40%;
     flex-grow: 0;
-    
-    
 }
 
 article.project .vertical-separator {

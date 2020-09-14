@@ -23,22 +23,6 @@ section#introduction span {
     font-size: 16px;
 }
 
-
-section#photos .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-section#photos .image {
-
-    flex-basis: 48%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding-top: 48%;
-    margin-bottom: 4%;
-}
-
 section#videos figure {
 
     width: 300px;
@@ -67,13 +51,6 @@ section#videos iframe {
 
         display: inline-block;
         margin-left: calc((100% - 560px) / 2);
-    }
-
-    section#photos .image {
-
-        flex-basis: 32.5%;
-        padding-top: 32.5%;
-        margin-bottom: 1.25%;
     }
 
     section#videos figure {
