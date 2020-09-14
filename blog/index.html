@@ -15,6 +15,7 @@ pagination:
 
 
 <section id="contents">
+{% if paginator.posts %}
 {% for post in paginator.posts %}
 {% assign author = site.data.authors[post.author] %}
 <a href="{{ post.url }}" class="post block-based-link">
@@ -30,6 +31,9 @@ pagination:
     <div class="image arrow-button"></div>
     </a>
 {% endfor %}
+{% else %}
+<p>There currently are no posts, come back soon!</p>
+{% endif %}
 </section>
 
 <div class="paginate-container">

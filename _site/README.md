@@ -1,12 +1,11 @@
 # Portfolio for James Menzies
 
-**Required External Links:**   [Github Repo](https://github.com/redbrickhut/James_Menzies_Portfolio) |  [Hosted Website](https://redbrickhut.github.io/MenziesPortfolioPublic/src/html/index.html) | [Wireframes](docs/wireframes.pdf) 
-
 ## Target Audience
 
 Given my background as a professional musician, I have a rare opportunity to corner an area of the market that most programmers don't. This namely being musicians who are in need of a developer, but also require someone who has a knowledge of the nuances and jargon of the musical profession as well.
 
 Whilst the intention is to optimize my website towards this demographic, I am mindful to make sure that it caters towards all potential employers as well.
+
 ## Purpose of Website
 
 There are four core purposes of this website:
@@ -43,10 +42,10 @@ Given that my website has extensive written content, I wanted to make sure that 
 
 ### The Home Page
 
-My main concern with the home page was to efficiently direct the user to the part of the site they wished to visit. The user is greeted with a simple welcome message, followed by graphical links to the "About Me", "My Projects" and "Media" pages. \
-\
-Once the screen widens past 600px, I wanted all of this information to displayed on the screen without any scrolling required. To achieve this, I used nested flex boxes, both horizontal and vertical, which mean that even wide but not tall displays can still manage to fit all of the page's content. The default page content dimensions have also been extensively overriden. \
-\
+My main concern with the home page was to efficiently direct the user to the part of the site they wished to visit. The user is greeted with a simple welcome message, followed by graphical links to the "About Me", "My Projects" and "Media" pages. 
+
+Once the screen widens past 600px, I wanted all of this information to displayed on the screen without any scrolling required. To achieve this, I used nested flex boxes, both horizontal and vertical, which mean that even wide but not tall displays can still manage to fit all of the page's content. The default page content dimensions have also been extensively overriden. 
+
 On certain mediums (such as a MacBook Air not in full screen mode), the screen gets quite wide but has limited height. I've needed to unload some elements to retain the page's integrity.
 
 ### The About Page
@@ -63,34 +62,12 @@ The point of this page is to validate my credentials as a musician. Stylisticall
 
 ### Blogs
 
-This is very similar in layout to the Projects page. One of the compromises I had to make was removing the teaser text for the post when scaling to the mobile design. Each post takes the user to a discrete page to read the article. For the post, one of the challenges was to get the small elements that comprise the introduction to align and render aesthetically.
+This is very similar in layout to the Projects page. One of the compromises I had to make was removing the teaser text for the post when scaling to the mobile design. Each post takes the user to a discrete page to read the article. For the post, one of the challenges was to get the small elements that comprise the introduction to align and render aesthetically.\
 
-
-
-
-
-
-
-## Site Map
-
-![Site map](docs/sitemap.png)
-Due to the relative simplicity of the website, most of it is accessible within a single click from the home page. The only exceptions are the blog posts, which by necessity must be broken up to reduce crowding. 
 
 ## Tech Stack
 * HTML
 * CSS
 * Git
 * Github
-
-## Screenshots
-1. The phone version's menu
-2. The about me section with the menu rendering over the content to preserve space.
-3. Full screen shot of the projects page.
-
-![](docs/mobile-view.png)
-<br><br>
-![](docs/tablet-view.png)
-<br><br>
-![](docs/full-screen.png)
-
-
+* Jekyll

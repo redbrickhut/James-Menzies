@@ -18,11 +18,9 @@ styles:
 <section id="introduction">
 <figure aria-label="James playing the bass in a suit" class="image"></figure>
 <ul id="key-details">
-    <li><strong class="key">Name: </strong>James Menzies</li>
-    <li><strong class="key">Age: </strong>32</li>
-    <li><strong class="key">Email: </strong>james.r.menzies@gmail.com</li>
-    <li><strong class="key">Phone: </strong>(+61) 0432 801 574</li>
-    <li><strong class="key">Location: </strong>Hobart, Tasmania, Australia</li>
+    {% for detail in site.data.key_details %}
+    <li><strong class="key">{{ detail["metric"] }}: </strong>{{ detail["value"] }}</li>
+    {% endfor %}
 </ul>
 </section>
 
@@ -44,7 +42,6 @@ styles:
 
 <section id="biography">
     <h2>Biography</h2>
-
     {% for paragraph in site.data.text["biography"] %}
     <p>{{ paragraph }}</p>
     {% endfor %}
