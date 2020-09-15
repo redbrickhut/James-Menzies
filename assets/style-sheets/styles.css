@@ -115,6 +115,10 @@ a.text-based-link:hover {
     filter: brightness(70%);
 }
 
+strong {
+    color: var(--light-green);
+}
+
 @media all and (min-width: 950px){
 
     .page-contents {

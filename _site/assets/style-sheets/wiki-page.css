@@ -11,6 +11,12 @@
     padding: 0;
 }
 
+a.text-based-link {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: none;
+}
+
 
 @media all and (min-width: 600px) {
     

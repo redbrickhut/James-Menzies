@@ -19,7 +19,7 @@
 
     <header class="horizontal-overlay">
         <div id="menu-icon" class="icon image"></div>
-        <h2>Front_matter</h2>
+        <h2>Portfolio Website</h2>
     </header>
 
     <div class="menu">
@@ -73,7 +73,7 @@
         
             
                 <li>
-                    <a href="home"></a>
+                    <a href="home" class="text-based-link">Home</a>
                 </li>
             
         
@@ -85,24 +85,66 @@
         
             
                 <li>
-                    <a href=""></a>
-                </li>
-            
-        
-            
-                <li>
-                    <a href="front_matter"></a>
+                    <a href="front_matter" class="text-based-link">Front Matter</a>
                 </li>
             
         
     </ul>
 </div>
 
-<h1 id="jekyll-reference">Jekyll Reference</h1>
+<h1 id="front-matter-guide">Front Matter Guide</h1>
 
-<p>This page is to serve as a guide for anyone that wishes to use my template as the basis for their own portfolio, and even for myself when I need a quick refresher of how my Jekyll front matter should work.</p>
+<p>This page is a quick look reference for the front matter that can be injected into all of the collections for this website. I would highly encourage anyone looking to emulate this website for their own portfolio to observe this guide.</p>
+
+<p>Required variables will be marked as such, and it is important that they are implemented, as it will cause the website to render incorrectly if not used.</p>
 
 <h2 id="projects">Projects</h2>
+
+<ul>
+  <li><strong>title:</strong> This is not strictly required, however if you want to link it up to a wiki, it is necessary.</li>
+  <li><strong>name (req.):</strong> This is the title that will appear when it is being rendered on the project listing page.</li>
+  <li><strong>source_url (req.):</strong> The link for the source code repository. The “Source Code” button link will be broken other wise.</li>
+  <li><strong>tags:</strong> Fills in the “Written in” piece of data on the project listing. Will be empty otherwise. Highly recommend adding.</li>
+  <li><strong>published:</strong> Must be set to true otherwise project will not appear amongst the listings.</li>
+  <li><strong>last_updated:</strong> This will be used by Jekyll to determing the display order of the project listings. Most recently updated projects will appear first.</li>
+  <li><strong>version:</strong> Used to populate the “Version” piece of data on the project listing.</li>
+  <li><strong>screenshots:</strong> This variable is a list of dictionaries which contain two key values; url and caption. The url points to the location of the image, relative to the /assets/images/projects/ folder. The caption is not madatory, however it is used for accessibility purposes.</li>
+  <li><strong>wiki:</strong> This variable is used in order to correctly render a sidebar for the project’s associated wiki. The sidebar will consist of two types of content:</li>
+  <li><strong>wiki_page:</strong> This will be a link to a specific page. There are two varibles; page and url. The page variable is the name you want to appear in the sidebar and the url variable is the hard link. The url specified relative to the following directory:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+/wikis/{{ project.title }}/
+
+</code></pre></div></div>
+<h3 id="example">Example</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Portfolio
+name: Professional Portfolio
+source_url: https://github.com/redbrickhut/redbrickhut.github.io
+tags:
+    - HTML
+    - CSS
+
+published: true
+last_updated: 2020-09-15
+version: 2.0
+screenshots:
+  - url: portfolio.png
+    caption: A screenshot of the "About Me" section 
+wiki:
+  - page: Home
+    url: home
+  - category: References
+  - page: Front Matter
+    url: front_matter
+---
+
+(Project description here)
+</code></pre></div></div>
+
+<h3 id="more-to-come">More to come</h3>
+
 
         
         
