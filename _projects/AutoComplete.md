@@ -1,12 +1,12 @@
 ---
 title: AutoComplete
 name: Java FX AutoComplete Textfield
-github: https://github.com/redbrickhut/AutoCompleteTextField
+source_url: https://github.com/redbrickhut/AutoCompleteTextField
 tags:
     - Java
     - JavaFX
 version: 1.0
-
+published: false
 screenshots:
   - url: autocomplete.png
     caption: A small demonstration of the auto-complete input.

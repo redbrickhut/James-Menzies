@@ -32,8 +32,8 @@ It also has three distinct modes:
 | Tablet | 600 - 950px | As above, but menu appears from the left hand side. |
 |Desktop | >950px | Menu is always visible, menu button is disabled and removed. Icons are repositioned.
 
-The rest of the display is complemented by a background image which is fixed in place, and then a slightly transparent content layer that scrolls, creating a parallax effect. As the screen widens, I restrict the pages content to a width of 950 pixels. This protects the layout of the page while allowing the interest of the backdrop behind to shine through. \
-\
+The rest of the display is complemented by a background image which is fixed in place, and then a slightly transparent content layer that scrolls, creating a parallax effect. As the screen widens, I restrict the pages content to a width of 950 pixels. This protects the layout of the page while allowing the interest of the backdrop behind to shine through. 
+
 The implementation for all of this is contained in the styles.css and nav.css, allowing for easy reusability.
 
 ### Colour Scheme
@@ -54,11 +54,11 @@ I wanted to make sure that the resume was clearly visible, so I included it at t
 
 ### Projects
 
-I was aware that listing my projects had the potential to create a rather monotone experience, so I used some nth child pseudo selectors to reverse the layout design. 
+This is perhaps the single biggest element that has changedI was aware that listing my projects had the potential to create a rather monotone experience, so I used some nth child pseudo selectors to reverse the layout design. 
 
 ### Media
 
-The point of this page is to validate my credentials as a musician. Stylistically not too much is required, through I do use a flex box to dynamically resize the image components.
+The point of this page is to show off my musical side, so nothing too special was required here. Just some simple YouTube iframe elements and captions.
 
 ### Blogs
 

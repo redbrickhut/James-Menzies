@@ -24,7 +24,9 @@ styles:
             aria-label="A snippet of some code."></figure>
 </section>
 
-{% for project in site.projects %}
+{% assign projects = site.projects | where: "published", true %}
+
+{% for project in projects %}
 <article class="project">
     <h2>{{ project.name }}</h2>
     <div class="flex-container">
@@ -43,7 +45,7 @@ styles:
                 <span class="link-message">More Info </span>
             </a>
             {% endif %}
-            <a class="project-link block-based-link" target="_blank" href={{ project.github }}>
+            <a class="project-link block-based-link" target="_blank" href={{ project.source_url }}>
                 <div class="vertical-separator"></div>
                 <span class="link-message">Source Code</span>
             </a>   

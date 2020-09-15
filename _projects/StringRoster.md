@@ -1,10 +1,12 @@
 ---
 title: StringRoster
 name: String Section Rostering Utility
-github: https://github.com/redbrickhut/StringSectionRosteringUtility
+source_url: https://github.com/redbrickhut/StringSectionRosteringUtility
 tags:
     - Python
+published: true
 version: 1.0
+last_updated: 2020-07-22
 screenshots:
   - url: rosteredit.png
     caption: A screenshot showing a completely filled string section.
