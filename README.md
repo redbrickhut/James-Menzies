@@ -62,7 +62,7 @@ The point of this page is to validate my credentials as a musician. Stylisticall
 
 ### Blogs
 
-This is very similar in layout to the Projects page. One of the compromises I had to make was removing the teaser text for the post when scaling to the mobile design. Each post takes the user to a discrete page to read the article. For the post, one of the challenges was to get the small elements that comprise the introduction to align and render aesthetically.\
+This is very similar in layout to the Projects page. One of the compromises I had to make was removing the teaser text for the post when scaling to the mobile design. Each post takes the user to a discrete page to read the article. For the post, one of the challenges was to get the small elements that comprise the introduction to align and render aesthetically.
 
 
 ## Tech Stack

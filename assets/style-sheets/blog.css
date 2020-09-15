@@ -122,6 +122,7 @@ section#contents .post .details span strong {
     section#introduction p {
         flex-basis: 45%;
         margin-right: 30px;
+        font-size: 18px;
     }
 
 

@@ -43,6 +43,12 @@ section#sales-pitch #nutshell {
     flex-basis: 100%;
 }
 
+section#sales-pitch #nutshell p {
+    color: var(--light-green);
+    padding-top: 20px;
+    font-size: 18px;
+}
+
 section#sales-pitch #skills {
 
     flex-basis: 100%;
@@ -77,12 +83,12 @@ section#sales-pitch #skills .flex-container li {
     }
 
     section#introduction {
-        max-width: 600px;
+        max-width: 650px;
     }
 
     section#introduction figure {
-        flex-basis: 45%;
-        padding-top: 45%;
+        flex-basis: 40%;
+        padding-top: 40%;
         flex-shrink: 1;
     }
 
@@ -103,7 +109,5 @@ section#sales-pitch #skills .flex-container li {
         flex-basis: 47%;
     }
 
-    section#sales-pitch #skills .flex-container li {
-        font-size: 22px;
-    }
+
 }

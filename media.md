@@ -7,11 +7,6 @@ styles:
 <h1>Media</h1>
 <section id="introduction">
         <p>{{ site.data.text["media_intro"] }}</p>
-        <span>For the personal side of things, my Instagram is right
-                    <a class="text-based-link" target="_blank" href="https://www.instagram.com/redbrickhut/">
-                        HERE.
-                    </a>
-        </span>
 </section>
 
 <section id="videos">

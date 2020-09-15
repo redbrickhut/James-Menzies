@@ -12,10 +12,8 @@
         <a href="{{ link.url }}" class="menu-item">{{ link.name }}</a>
         {% endfor %}
     </div>
-
     <footer class="horizontal-overlay">
         <div class="flex-container">
-
             {% for link in site.data.external_links %}
             <a target="_blank" href="{{ link.url }}">
                 <div class="icon image" style="background-image: url(/assets/images/icons/{{ link.icon }})"></div>

@@ -1,23 +1,23 @@
 404_message: Oops! It seems like you either have visited a broken link or you've entered in the wrong address. Fear not, you can get back on track by clicking on one of the links in the menu bar.
 
 biography: 
-  - James Menzies has been setting the bar for low standars since the day he was born. What an absolute madlad lol
-  - This is just another pretentious paragraph to really hammer home the narcissism. Oh boy, try explaining this to the psych, they're gonna be strapping me down in a padded room in no time \#ruok
+  - James began learning the double bass from the age of 10. He woudl then graduate from the Sydney Conservatorium of Music with a Bachelor of Music Performance in 2010. Over the course of his studies, he learnt primarily from Alex Henery (Principal, Sydney Symphony) and Maxime Bibeau (Principal, Australian Chamber Orchestra). He was also fortunate enough to participate in elite training ensembles such as the Australian Youth Orchestra (2007-08) and the Sydney Sinfonia (2008-2013).
+  - Since graduating, James worked as as a teacher and freelancer working with numerous orchestras such as the Sydney Symphony, West Australian Symphony Orchestra, Auckland Philharmonia, Canberra Symphony, the New Zealand Symphony Orchestra, and the Opera Australia Orchestra. In 2014, he won a contract with the Tasmanian Symphony Orchestra, which became a permanent position in 2015. 
+  - James has experienced many highlights since joining the TSO, but most notably among them were tours to China and Melbourne, as well as winning being part of a Helpman winning performance of Tristan and Isolde in 2017. He has also taken a keen interest in the running of the orchestra, joining the Musician's Representative committee in 2020.
+  - Since joining the TSO, James began taking a keen interest in coding, where he began learning Java in order to make side projects as a hobby. However in 2020, with the pandemic taking full effect, he decided to enrol in Coder Academy's Cloud, Code and Cybersecurity bootcamp. He is due to graduate in early 2021.
 
 blog_intro: 
-  - When I'm working on a project, I find it is often helpful to document solutions as I stumble across them Other times I just like to think out loud. Here are those thoughts...
-  - I hope there's something here that helps you out too. If not, I promise to make the
-        diversion entertaining.
+  - I like to document as many moments as I can, as there is likely a need to reflect on them from time to time. Hopefully within is a solution you've been searching for. If you find something helpful, or would like me to investigate something, let me know!
 
 media_intro:
-  - Here you will find various photos and videos of me taken throughout my career as a double bass player. Most of these are taken from rehearsals and performances with my orchestra the TSO. I have also collaborated with other local artists such as (permission pending). If you're a local artist based in Hobart and want to do something together, get in touch and we can a coffee and a chat!
+  - Here you will find various photos and videos of me taken throughout my career as a double bass player. Most of these are taken from rehearsals and performances with my orchestra the TSO. If you're a local artist based in Hobart and want to do something together, please get in touch. I'd love to hear from you.
 
 project_intro: 
-  - If you're a musician that is in need of a technical solution that requires an in-depth knowledge of the field I would love to hear from you! Check out the "ABOUT ME" section to get in touch.
-  - In any case I hope you enjoy browsing my collection.
+  - Here is my eclectic mix of the things that I've been working on. If you would like to take a closer look at something you have two options. If you would like to read about the project, and learn how to use and install it, click on MORE INFO. If you're interested in looking at the code itself (and even contributing) click on SOURCE CODE. 
+  - If there's something you'd like me to write for you, get in touch now!
 
 sales_pitch:
-  - This is the part of the page where I will make a brief summary of my experience and intentions. Basically, this is my sales pitch. I'll finish with some kind of call action, along the lines of "Get in touch, and let's start making something together". I mean, like that but less cliche and more clever. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - The nature of the musical profession is nuanced and complex, making it inherently difficult to write software for. That's where I come in. With over 20 years of instrumental experience and 10 years in the classical music industry I am rarely placed to cater to any industry related software needs. Get in touch today, and we can start discovering the solution you're after.
 
 welcome_tag:
   - I'm James, I'm a musician and coder. There's plenty to do here. Take a look around.
